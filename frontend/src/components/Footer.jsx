@@ -1,0 +1,79 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
+export default function Footer() {
+  return (
+    <footer className="bg-[#020B2D] border-t border-[#1E3A5F]">
+      <div className="max-w-7xl mx-auto px-6 py-12">
+        <div className="grid md:grid-cols-3 gap-10">
+
+          <div>
+            <h2 className="text-2xl font-bold text-[#28D7C5]">
+              Sports Council
+            </h2>
+            <p className="text-white font-semibold">IIT Indore</p>
+
+            <p className="mt-4 text-slate-400">
+              Fostering excellence in athletics and promoting a healthy
+              lifestyle at IIT Indore.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-white font-bold mb-4">Resources</h3>
+
+            <div className="flex flex-col gap-2">
+              <Link
+                to="/clubs"
+                className="text-slate-400 hover:text-[#28D7C5]"
+              >
+                Sports Facilities
+              </Link>
+
+              <Link
+                to="/"
+                className="text-slate-400 hover:text-[#28D7C5]"
+              >
+                About Us
+              </Link>
+
+              <a
+                href="https://studentaffairs.iiti.ac.in/"
+                target="_blank"
+                rel="noreferrer"
+                className="text-slate-400 hover:text-[#28D7C5]"
+              >
+                Student Affairs
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-white font-bold mb-4">Contact</h3>
+
+            <p className="text-slate-400">
+              General Secretary, Sports
+            </p>
+
+            <a
+              href="mailto:gssports@iiti.ac.in"
+              className="text-[#28D7C5]"
+            >
+              gssports@iiti.ac.in
+            </a>
+
+            <p className="text-slate-400 mt-4">
+              IIT Indore, Simrol
+              <br />
+              Madhya Pradesh - 453552
+            </p>
+          </div>
+        </div>
+
+        <div className="border-t border-[#1E3A5F] mt-10 pt-6 text-center text-slate-500">
+          © {new Date().getFullYear()} Sports Council | IIT Indore
+        </div>
+      </div>
+    </footer>
+  );
+}
