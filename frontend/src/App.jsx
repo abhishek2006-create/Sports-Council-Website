@@ -15,6 +15,7 @@ import EventDetail from './pages/EventDetail'
 import Staff from './pages/Staff'
 import ClubsGallery from './pages/ClubAndSocities'
 import Feedback from './pages/feedback'
+import Fest from "./pages/Fest";
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
               <Route path='/gallery' element={<Gallery />} />
               <Route path='/contact' element={<Contact />} />
               <Route path='/feedback' element={<Feedback />} />
+              <Route path="/fest" element={<Fest />} />
             </Routes>
             <Footer />
           </DisplayProvider>
