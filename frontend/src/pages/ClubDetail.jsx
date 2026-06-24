@@ -49,17 +49,6 @@ export default function ClubDetail() {
           {club.name} <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-emerald-400">Excellence</span>
         </h1>
 
-        <div className="flex justify-center">
-          <motion.img
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            src={club.image || "https://via.placeholder.com/800x400"}
-            alt={club.name}
-            className="w-full max-w-2xl h-auto object-cover rounded-2xl shadow-lg border-b-4 border-teal-500 bg-slate-800"
-          />
-        </div>
-
         <div className="mt-10">
           <p className="text-lg md:text-xl text-slate-400 leading-relaxed text-justify">
             {club.description}
@@ -89,7 +78,27 @@ export default function ClubDetail() {
           </motion.div>
         </div>
 
-        <div className="mb-12">
+        {/* <div className="mb-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+            className="flex flex-col items-center"
+          >
+            <div className="relative group">
+              <div className="absolute -inset-1 bg-teal-500 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-300"></div>
+              <img
+                src={club.CoHead?.photo || "https://via.placeholder.com/150"}
+                alt={club.CoHead?.name}
+                className="relative w-32 h-32 rounded-full object-cover border-4 border-slate-950 shadow-lg bg-slate-800"
+              />
+            </div>
+            <h4 className="mt-4 text-2xl font-black text-slate-100">{club.CoHead?.name || "Lead Name"}</h4>
+            <p className="text-teal-400 font-bold uppercase tracking-widest text-sm"> Co-Head</p>
+          </motion.div>
+        </div> */}
+
+        {/* <div className="mb-12">
           <h3 className="text-center text-xs font-black uppercase tracking-[0.3em] text-teal-400 mb-8">Core Members</h3>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
             {club.members?.map((member, index) => (
@@ -107,6 +116,30 @@ export default function ClubDetail() {
                 />
                 <p className="mt-3 font-bold text-slate-100 text-center leading-tight group-hover:text-teal-400 transition-colors">{member.name}</p>
                 <p className="text-[10px] text-slate-500 font-bold uppercase tracking-tighter mt-1">{member.role || "Member"}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div> */}
+
+        <div className="mb-12">
+          <h3 className="text-center text-xs font-black uppercase tracking-[0.3em] text-teal-400 mb-8">
+            Club Gallery
+          </h3>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {club.gallery?.map((image, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: index * 0.1 }}
+                className="overflow-hidden rounded-2xl border border-slate-800 bg-slate-900 shadow-lg"
+              >
+                <img
+                  src={image}
+                  alt={`Gallery ${index + 1}`}
+                  className="w-full h-56 object-cover hover:scale-110 transition-transform duration-500"
+                />
               </motion.div>
             ))}
           </div>

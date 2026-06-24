@@ -2,26 +2,26 @@ import DisplayContext from '../context/DisplayContext';
 import { useContext, useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import img1 from "../images/1.jpg";
+
 
 const categoryContent = {
   "JOSH 2.0": {
     title: "JOSH",
-    img: img1,
+    img: "",
     tagline: "Unleash the Fire Within",
     description:
       "JOSH 2.0 is the annual sports fest of IIT Indore featuring high-energy competitions, inter-college participation, and a celebration of sportsmanship."
   },
   "General Championship": {
     title: "General Championship",
-    img: img1,
+    img: "",
     tagline: "The Ultimate Battle for Glory",
     description:
       "The General Championship is a year-long competition among hostels across multiple sports to crown the best overall hostel."
   },
   "Inter Hostel": {
     title: "Inter Hostel",
-    img: img1,
+    img: "",
     tagline: "Unity through Competition",
     description:
       "Inter Hostel tournaments encourage competitive spirit among hostels in various indoor and outdoor sports."
