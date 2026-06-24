@@ -8,7 +8,7 @@ export default function Team() {
   const categoryMap = {
     "opnl": "Operations",
     "technicals": "Technicals",
-    "social media": "Social Media",
+    "social-media": "Social Media",
     "marketing": "Marketing",
     "outreach": "Outreach",
   };
@@ -40,11 +40,11 @@ export default function Team() {
   };
 
   const groups = [
-    { key: "opnl", title: "Operations", subtitle: "Operations & Logistics", id: "01", img: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800" },
-    { key: "technicals", title: "Technicals", subtitle: "Development & Tech", id: "02", img: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800" },
-    { key: "social-media", title: "Social Media", subtitle: "Cinematography", id: "03", img: "https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&q=80&w=800" },
-    { key: "marketing", title: "Marketing", subtitle: "marketing", id: "04", img: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=800" },
-    { key: "outreach", title: " Outreach", subtitle: "Outreach ", id: "05", img: "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80&w=800" },
+    { key: "opnl", title: "Operations", subtitle: "Operations & Logistics", id: "01", img: "/images/opnl.jpg" },
+    { key: "technicals", title: "Technicals", subtitle: "Development & Tech", id: "02", img: "/images/tech.jpg" },
+    { key: "social-media", title: "Social Media", subtitle: "Cinematography", id: "03", img: "/images/social.webp" },
+    { key: "marketing", title: "Marketing", subtitle: "marketing", id: "04", img: "/images/marketing.webp" },
+    { key: "outreach", title: " Outreach", subtitle: "Outreach ", id: "05", img: "/images/outreach.webp" },
   ];
 
   const activeGroupData = groups.find((g) => g.key === selectedCategory);

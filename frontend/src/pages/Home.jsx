@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from 'react';
 import DisplayContext from '../context/DisplayContext';
-import homeBG from '/src/images/image.png';
+
 import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
 import AboutUs from './AboutUs';
@@ -62,7 +62,7 @@ export default function Home() {
           >
             <div className="p-1 rounded-3xl bg-gradient-to-br from-teal-400/40 to-emerald-400/40">
               <img
-                src={homeBG}
+                src="/images/G2.png"
                 alt="IIT Indore Sports Team"
                 className="w-full h-auto object-cover rounded-3xl shadow-2xl bg-slate-950"
               />
@@ -71,7 +71,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className='relative bg-slate-950 py-16 w-full overflow-hidden'>
+      {/* <div className='relative bg-slate-950 py-16 w-full overflow-hidden'>
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-teal-500/5 rounded-full blur-[120px] pointer-events-none"></div>
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
@@ -101,8 +101,8 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </div>
-      <div className='relative bg-slate-950 py-16 w-full overflow-hidden'>
+      </div> */}
+      {/* <div className='relative bg-slate-950 py-16 w-full overflow-hidden'>
         <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-emerald-500/10 rounded-full blur-[120px] pointer-events-none"></div>
 
         <div className="max-w-5xl mx-auto px-6 relative z-10">
@@ -139,7 +139,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
 
       <AboutUs />
 

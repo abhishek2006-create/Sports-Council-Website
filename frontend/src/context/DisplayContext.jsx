@@ -2,17 +2,12 @@ import React, { createContext, useState } from "react";
 import axios from "axios";
 import Cookies from "js-cookie";
 
-// MERN backend URL on port 5000. Easily toggle to port 8000 for Django if desired.
 const BASE_URL = "http://localhost:5000/backend/api";
 
 const DisplayContext = createContext();
 export default DisplayContext;
 
-// eslint-disable-next-line react/prop-types
 export const DisplayProvider = ({ children }) => {
-    let [facilities, setFacilities] = useState(() =>
-        Cookies.get('facilities') ? JSON.parse(Cookies.get('facilities')) : null
-    );
     let [team, setTeam] = useState(() =>
         Cookies.get('team') ? JSON.parse(Cookies.get('team')) : null
     );
@@ -30,7 +25,7 @@ export const DisplayProvider = ({ children }) => {
     );
     let [clubRules, setClubRules] = useState(() =>
         Cookies.get('clubRules') ? JSON.parse(Cookies.get('clubRules')) : null
-    );    
+    );
     let [events, setEvents] = useState(() =>
         Cookies.get('events') ? JSON.parse(Cookies.get('events')) : null
     );
@@ -42,20 +37,6 @@ export const DisplayProvider = ({ children }) => {
     );
     let [messages, setMessages] = useState([]);
 
-    let getFacilities = () => {
-        axios.get(`${BASE_URL}/facilities/`)
-            .then((response) => {
-                console.log(response.data);
-                const formattedData = response.data.map(facility => ({
-                    ...facility,
-                    rules: facility.rules.map(rule => rule.rule)
-                }));
-                setFacilities(formattedData);
-                Cookies.set('facilities', JSON.stringify(formattedData));
-            })
-            .catch((error) => console.log(error));
-    };
-    
 
     let getTeams = () => {
         axios.get(`${BASE_URL}/teams/`)
@@ -145,21 +126,28 @@ export const DisplayProvider = ({ children }) => {
             Name: formData.get('name'),
             Email: formData.get('email'),
             Phone_Number: formData.get('phone'),
-            Message: formData.get('details') || formData.get('message') || ""
+            Message: `
+Sport/Topic: ${formData.get('sport')}
+Summary: ${formData.get('summary')}
+Details:
+${formData.get('details')}
+`
         };
-
-        console.log(data);
-        return axios.post(`${BASE_URL}/messages/`, data)
-            .then((response) => {
-                console.log(response.data);
-                getMessages();
-            })
-            .catch((error) => console.error(error));
+        try {
+            const response = await axios.post(
+                `${BASE_URL}/messages/`,
+                data
+            );
+            console.log(response.data);
+            getMessages();
+            return response.data;
+        } catch (error) {
+            console.error(error);
+            throw error;
+        }
     };
 
     const ContextData = {
-        getFacilities,
-        facilities,
         getTeams,
         team,
         getGallery,

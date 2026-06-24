@@ -1,4 +1,4 @@
-import galleryImages from "../pages/GalleryData";
+import galleryImages from "../pages/GalleryData.json";
 import { useState, useEffect } from "react";
 
 export default function Gallery() {
