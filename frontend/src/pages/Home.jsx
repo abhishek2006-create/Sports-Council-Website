@@ -70,6 +70,48 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
+      {/* ================= Official Fest Section ================= */}
+<section className="w-full bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 py-20 px-6">
+  <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-12">
+
+    {/* Left Content */}
+    <div className="lg:w-1/2">
+      <span className="text-teal-400 font-semibold uppercase tracking-wider">
+        Official College Sports Fest
+      </span>
+
+      <h2 className="text-4xl md:text-5xl font-bold text-white mt-3 mb-6">
+        Lakshya
+      </h2>
+
+      <p className="text-slate-300 text-lg leading-relaxed mb-8">
+        Experience IIT Indore's flagship sports festival featuring
+        thrilling competitions, exciting events, inspiring athletes,
+        workshops, and unforgettable moments that bring together
+        participants from colleges across the country.
+      </p>
+
+      <a
+        href="/fest"
+        className="inline-block bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-400 hover:to-emerald-400 text-white font-semibold px-7 py-3 rounded-xl shadow-lg transition duration-300"
+      >
+        Explore Fest →
+      </a>
+    </div>
+
+    {/* Right Image */}
+    <div className="lg:w-1/2 flex justify-center">
+      <div className="p-1 rounded-3xl bg-gradient-to-br from-teal-400/40 to-emerald-400/40">
+        <img
+          src="https://ik.imagekit.io/q3cb0c9v5/lakshya/about/sport0.jpg?tr=w-3840,c-at_max"
+          alt="Lakshya Sports Fest"
+          className="rounded-3xl shadow-2xl w-full max-w-xl object-cover bg-slate-950"
+        />
+      </div>
+    </div>
+
+  </div>
+</section>
 
       <div className='relative bg-slate-950 py-16 w-full overflow-hidden'>
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-teal-500/5 rounded-full blur-[120px] pointer-events-none"></div>
