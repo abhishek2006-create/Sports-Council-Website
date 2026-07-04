@@ -13,11 +13,17 @@ export default function Contact() {
     e.preventDefault();
     setLoading(true);
 
-    await SaveMessage(e);
-
-    setLoading(false);
-    setIsPopupOpen(true);
-    e.target.reset();
+    try {
+      await SaveMessage(e);
+      setIsPopupOpen(true);
+      e.target.reset();
+    } catch (error) {
+      console.error("Form submission error:", error);
+      const errMsg = error.response?.data?.error || 'Failed to submit query. Please check your network or inputs.';
+      alert(errMsg);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
