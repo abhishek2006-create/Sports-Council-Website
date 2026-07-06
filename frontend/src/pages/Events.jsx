@@ -8,6 +8,7 @@ const categoryContent = {
   "JOSH 2.0": {
     title: "JOSH",
     img: "",
+    route: "/events/josh",
     tagline: "Unleash the Fire Within",
     description:
       "JOSH 2.0 is the annual sports fest of IIT Indore featuring high-energy competitions, inter-college participation, and a celebration of sportsmanship."
@@ -15,16 +16,18 @@ const categoryContent = {
   "General Championship": {
     title: "General Championship",
     img: "",
+    route: "/events/gc",
     tagline: "The Ultimate Battle for Glory",
     description:
       "The General Championship is a year-long competition among hostels across multiple sports to crown the best overall hostel."
   },
-  "Inter Hostel": {
-    title: "Inter Hostel",
+  "Shaurya": {
+    title: "Shaurya",
     img: "",
+    route: "/events/shaurya",
     tagline: "Unity through Competition",
     description:
-      "Inter Hostel tournaments encourage competitive spirit among hostels in various indoor and outdoor sports."
+      "Shaurya celebrates competitive spirit, strength, teamwork, and sportsmanship."
   }
 };
 
@@ -45,34 +48,14 @@ const itemVariants = {
 };
 
 export default function Events() {
-  const { getEvents, events } = useContext(DisplayContext);
+  const { getEvents } = useContext(DisplayContext);
   const [selectedCategory, setSelectedCategory] = useState("All");
   const navigate = useNavigate();
 
   useEffect(() => {
     getEvents();
   }, []);
-  const findEventId = (categoryKey) => {
-    if (!events || events.length === 0) return null;
-
-    const keyword = categoryKey.toLowerCase();
-
-    const matched = events.find((e) =>
-      e.Title?.toLowerCase().includes(keyword) ||
-      keyword.includes(e.Title?.toLowerCase())
-    );
-
-    return matched ? matched.id : null;
-  };
-
-  const handleViewDetails = (categoryKey) => {
-    const eventId = findEventId(categoryKey);
-    if (eventId) {
-      navigate(`/events/${eventId}`);
-    } else {
-      alert("Event details not available yet. Check back soon!");
-    }
-  };
+  
 
   return (
     <div className="pt-5 pb-20 min-h-screen font-poppins bg-slate-950 text-slate-100 selection:bg-teal-500 selection:text-white relative overflow-hidden">
@@ -134,7 +117,7 @@ export default function Events() {
                 : "bg-slate-900/60 backdrop-blur-md border-slate-800 text-slate-400 hover:border-teal-500/50 hover:text-teal-400"
                 }`}
             >
-              All Events
+              Current Events
             </motion.button>
 
             {Object.keys(categoryContent).map((key) => (
@@ -167,39 +150,7 @@ export default function Events() {
                 exit={{ opacity: 0, y: 20, transition: { duration: 0.25 } }}
                 className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
               >
-                {Object.entries(categoryContent).map(([key, data]) => (
-                  <motion.div
-                    key={key}
-                    variants={itemVariants}
-                    whileHover={{ y: -8 }}
-                    onClick={() => setSelectedCategory(key)}
-                    className="group cursor-pointer bg-slate-900/60 backdrop-blur-md rounded-3xl border border-slate-800/80 shadow-lg hover:shadow-[0_20px_40px_rgba(20,184,166,0.15)] hover:border-teal-500/30 transition-all duration-500 overflow-hidden flex flex-col h-full"
-                  >
-                    <div className="relative h-48 overflow-hidden">
-                      <motion.img
-                        src={data.img}
-                        alt={data.title}
-                        className="w-full h-full object-cover"
-                        whileHover={{ scale: 1.08 }}
-                        transition={{ duration: 0.7 }}
-                      />
-                      <div className="absolute inset-0 bg-slate-950/40 group-hover:bg-slate-950/10 transition-colors"></div>
-                    </div>
-
-                    <div className="p-8 flex-1 flex flex-col items-start">
-                      <span className="text-teal-400 text-[10px] font-black uppercase tracking-widest mb-2">
-                        {data.tagline}
-                      </span>
-                      <h3 className="text-2xl font-black text-slate-100 mb-3 leading-tight">
-                        {data.title}
-                      </h3>
-                      <div className="mt-auto pt-4 flex items-center text-slate-300 font-bold text-sm group-hover:text-teal-400 transition-colors">
-                        Read More{" "}
-                        <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
-                      </div>
-                    </div>
-                  </motion.div>
-                ))}
+                
               </motion.div>
 
             ) : (
@@ -288,7 +239,7 @@ export default function Events() {
                       <motion.button
                         whileHover={{ y: -4, scale: 1.03 }}
                         whileTap={{ scale: 0.96 }}
-                        onClick={() => handleViewDetails(selectedCategory)}
+                        onClick={() => navigate(categoryContent[selectedCategory].route)}
                         className="px-8 py-4 bg-teal-500 text-slate-950 rounded-xl font-black uppercase tracking-widest text-xs hover:bg-teal-600 transition-all duration-300 shadow-xl shadow-teal-500/20"
                       >
                         View Details

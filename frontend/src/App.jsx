@@ -16,7 +16,9 @@ import Staff from './pages/Staff'
 import ClubsGallery from './pages/ClubAndSocities'
 import Feedback from './pages/feedback'
 import Fest from "./pages/Fest";
-
+import Josh from './pages/josh';
+import GC from './pages/gc';
+import Shaurya from './pages/shaurya';
 
 function App() {
   return (
@@ -28,8 +30,13 @@ function App() {
             <Routes>
               <Route path='/' element={<Home />} />
               <Route path='/home' element={<Home />} />
-              <Route path='/events' element={<Events />} />
-              <Route path='/events/:id' element={<EventDetail />} />
+              <Route path="/events" element={<Events />} />
+
+<Route path="/events/josh" element={<Josh />} />
+<Route path="/events/gc" element={<GC />} />
+<Route path="/events/shaurya" element={<Shaurya />} />
+
+<Route path="/events/:id" element={<EventDetail />} />
               <Route path='/team' element={<Team />} />
               <Route path='/staff' element={<Staff />} />
               <Route path='/clubs' element={<ClubsGallery />} />
