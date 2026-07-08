@@ -13,6 +13,12 @@ export default function Team() {
     "outreach": "Outreach",
   };
 
+  const heads = [
+    { img: "/images/Aryan.jpeg", name: "Aryan Poonia", role: "Joint Secretary", insta: "https://www.instagram.com/aryanpoonia44?utm_source=qr&igsh=cnZnZGtmYTkxa245", linkedin: "https://www.linkedin.com/in/aryan-poonia-0b255a322?utm_source=share_via&utm_content=profile&utm_medium=member_android" },
+    { img: "/images/shukla.png", name: "Lakshya Shukla", role: "General Secretary Sports", insta: "https://www.instagram.com/lakshya.sl?igsh=ZXRpNW44eHQwcnRw", linkedin: "https://www.linkedin.com/in/lakshya-shukla-853542345?utm_source=share_via&utm_content=profile&utm_medium=member_android" },
+    { img: "/images/utkarsh.jpg", name: "Utkarsh Sharma", role: "Joint Secretary", insta: "https://instagram.com/utkarsh.0706?utm_source=qr&igsh=MTN0ZWk0M2JjN3U1Nw==", linkedin: "https://www.linkedin.com/in/utkarsh-s20?utm_source=share_via&utm_content=profile&utm_medium=member_android" },
+  ];
+
   const getGoogleDriveImage = (link) => {
     if (!link) return "https://via.placeholder.com/200";
     const idMatch = link.match(/id=([^&]+)/);
@@ -56,18 +62,12 @@ export default function Team() {
 
   const containerVariants = {
     hidden: {},
-    show: {
-      transition: { staggerChildren: 0.1 }
-    }
+    show: { transition: { staggerChildren: 0.1 } }
   };
 
   const itemVariants = {
     hidden: { opacity: 0, y: 30 },
-    show: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.5, ease: "easeOut" }
-    }
+    show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } }
   };
 
   return (
@@ -90,7 +90,7 @@ export default function Team() {
           initial={{ opacity: 0, y: 35 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16 relative"
+          className="text-center mb-10 relative"
         >
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-teal-500 opacity-20 blur-3xl rounded-full pointer-events-none"></div>
           <span className="text-teal-400 text-xs font-black uppercase tracking-[0.4em] block mb-3 relative z-10">
@@ -105,6 +105,89 @@ export default function Team() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="h-1.5 bg-gradient-to-r from-teal-400 to-emerald-400 mx-auto rounded-full relative z-10"
           />
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="w-full mb-16"
+        >
+          <div className="flex justify-center items-end gap-4 sm:gap-6 md:gap-8 lg:gap-10 flex-wrap">
+            {heads.map((head, idx) => {
+              const isCenter = idx === 1;
+              const heightClass = isCenter
+                ? "h-64 sm:h-72 md:h-80 lg:h-96"
+                : "h-56 sm:h-64 md:h-72 lg:h-80";
+              const widthClass = isCenter
+                ? "w-36 sm:w-40 md:w-48 lg:w-56"
+                : "w-32 sm:w-36 md:w-40 lg:w-48";
+
+              return (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, y: 60, scale: 0.85 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  transition={{ delay: 0.4 + idx * 0.15, duration: 0.7, ease: "easeOut" }}
+                  whileHover={{ y: -10, scale: 1.03 }}
+                  className="group flex flex-col items-center"
+                >
+                  <div className={`relative ${widthClass} ${heightClass} rounded-full overflow-hidden border-4 border-slate-700/80 group-hover:border-teal-400/70 shadow-xl shadow-black/50 group-hover:shadow-teal-500/20 transition-all duration-500 bg-slate-800/50`}>
+                    <motion.img
+                      src={head.img}
+                      alt={head.name}
+                      className="w-full h-full object-cover"
+                      whileHover={{ scale: 1.1 }}
+                      transition={{ duration: 0.7 }}
+                      onError={(e) => { e.target.src = "https://via.placeholder.com/300x400?text=Head"; }}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950/40 via-transparent to-transparent pointer-events-none" />
+                  </div>
+
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.8 + idx * 0.15, duration: 0.5 }}
+                    className="text-center mt-5"
+                  >
+                    <h3 className="text-base sm:text-lg md:text-xl font-black text-slate-100 group-hover:text-teal-400 transition-colors duration-300">
+                      {head.name}
+                    </h3>
+                    <p className="text-teal-400/90 text-[10px] sm:text-xs font-bold uppercase tracking-[0.25em] mt-1">
+                      {head.role}
+                    </p>
+
+                    <div className="flex justify-center gap-2 mt-3">
+                      {head.insta && (
+                        <a
+                          href={head.insta}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="w-7 h-7 flex items-center justify-center rounded-full bg-slate-800/60 border border-slate-700 text-slate-400 hover:bg-pink-500 hover:text-white hover:border-pink-500 hover:scale-110 transition-all duration-300"
+                        >
+                          <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                          </svg>
+                        </a>
+                      )}
+                      {head.linkedin && (
+                        <a
+                          href={head.linkedin}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="w-7 h-7 flex items-center justify-center rounded-full bg-slate-800/60 border border-slate-700 text-slate-400 hover:bg-blue-600 hover:text-white hover:border-blue-600 hover:scale-110 transition-all duration-300"
+                        >
+                          <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h5v-8.321c0-4.608 5.472-4.474 5.472 0v8.321h5v-9.643c0-6.918-7.416-6.671-9.356-3.791v-2.887z" />
+                          </svg>
+                        </a>
+                      )}
+                    </div>
+                  </motion.div>
+                </motion.div>
+              );
+            })}
+          </div>
         </motion.div>
 
         <motion.div

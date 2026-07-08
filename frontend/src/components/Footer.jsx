@@ -25,14 +25,14 @@ export default function Footer() {
             <div className="flex flex-col gap-2">
               <Link
                 to="/clubs"
-                className="text-slate-400 hover:text-[#28D7C5]"
+                className="text-slate-400 hover:text-[#28D7C5] transition-colors"
               >
                 Sports Facilities
               </Link>
 
               <Link
                 to="/"
-                className="text-slate-400 hover:text-[#28D7C5]"
+                className="text-slate-400 hover:text-[#28D7C5] transition-colors"
               >
                 About Us
               </Link>
@@ -41,7 +41,7 @@ export default function Footer() {
                 href="https://studentaffairs.iiti.ac.in/"
                 target="_blank"
                 rel="noreferrer"
-                className="text-slate-400 hover:text-[#28D7C5]"
+                className="text-slate-400 hover:text-[#28D7C5] transition-colors"
               >
                 Student Affairs
               </a>
@@ -57,7 +57,7 @@ export default function Footer() {
 
             <a
               href="mailto:gssports@iiti.ac.in"
-              className="text-[#28D7C5]"
+              className="text-[#28D7C5] hover:underline"
             >
               gssports@iiti.ac.in
             </a>
@@ -69,9 +69,36 @@ export default function Footer() {
             </p>
           </div>
         </div>
+        <div className="border-t border-[#1E3A5F] mt-12 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-sm">
 
-        <div className="border-t border-[#1E3A5F] mt-10 pt-6 text-center text-slate-500">
-          © {new Date().getFullYear()} Sports Council | IIT Indore
+          <div>
+            © {new Date().getFullYear()} Sports Council | IIT Indore
+          </div>
+
+          <div className="flex items-center gap-1.5 flex-wrap justify-center">
+            <span>Designed & Developed by</span>
+
+            <a
+              href="https://www.instagram.com/2410_abhishek.01?igsh=ZmltenNpdmU2OWsw"
+              target="_blank"
+              rel="noreferrer"
+              className="font-medium text-slate-300 hover:text-[#28D7C5] transition-colors ml-1"
+            >
+              Abhishek Bairwa
+            </a>
+
+            <span>&</span>
+
+            <a
+              href="https://www.instagram.com/2410_abhishek.01?igsh=ZmltenNpdmU2OWsw"
+              target="_blank"
+              rel="noreferrer"
+              className="font-medium text-slate-300 hover:text-[#28D7C5] transition-colors"
+            >
+              Tanush Bansal
+            </a>
+          </div>
+
         </div>
       </div>
     </footer>
