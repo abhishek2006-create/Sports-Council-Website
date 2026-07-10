@@ -2,12 +2,13 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const galleryImages = [
-  "/fest1.JPG",
-  "/fest2.JPG",
-  "/fest3.JPG",
-  "/fest4.JPG",
-  "/fest5.JPG",
-  "/fest6.JPG",
+  "https://res.cloudinary.com/dats2xfzl/image/upload/v1783511878/IMG-20250816-WA0007_sbdmee.jpg",
+  "https://res.cloudinary.com/dats2xfzl/image/upload/v1783511980/IMG_20250825_195715189_1_mshbh5.jpg",
+  "https://res.cloudinary.com/dats2xfzl/image/upload/v1783511870/IMG-20250817-WA0015_q4xcfd.jpg",
+  "https://res.cloudinary.com/dats2xfzl/image/upload/v1783511585/IMG-20250902-WA0030_htwjej.jpg",
+  "https://res.cloudinary.com/dats2xfzl/image/upload/v1783511584/IMG-20250826-WA0023_xhhn2u.jpg",
+  "https://res.cloudinary.com/dats2xfzl/image/upload/v1783511585/IMG-20250820-WA0009_wogs4f.jpg",
+  "https://res.cloudinary.com/dats2xfzl/image/upload/v1783512684/IMG-20230912-WA0025_lcgz2e.jpg",
 ];
 
 export default function Josh() {
@@ -18,7 +19,7 @@ export default function Josh() {
       <section
         className="relative h-[75vh] flex items-center justify-center"
         style={{
-          backgroundImage: "url('/fest1.JPG')",
+          backgroundImage: "url('https://res.cloudinary.com/dats2xfzl/image/upload/v1783512684/IMG-20230912-WA0025_lcgz2e.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

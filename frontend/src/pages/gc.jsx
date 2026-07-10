@@ -2,12 +2,12 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const galleryImages = [
-  "/fest7.JPG",
-  "/fest8.JPG",
-  "/fest9.JPG",
-  "/fest10.JPG",
-  "/fest11.JPG",
-  "/fest12.jpg",
+  "/images/fest7.JPG",
+  "/images/fest8.JPG",
+  "/images/fest9.JPG",
+  "/images/fest10.JPG",
+  "/images/fest11.JPG",
+  "/images/fest12.jpg",
 ];
 
 export default function GC() {
@@ -18,7 +18,7 @@ export default function GC() {
       <section
         className="relative h-[75vh] flex items-center justify-center"
         style={{
-          backgroundImage: "url('/fest7.JPG')",
+          backgroundImage: "url('/images/fest7.JPG')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

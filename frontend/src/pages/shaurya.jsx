@@ -2,12 +2,17 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const galleryImages = [
-  "/fest13.JPG",
-  "/fest14.JPG",
-  "/fest15.JPG",
-  "/fest16.JPG",
-  "/fest17.JPG",
-  "/fest18.JPG",
+  "https://res.cloudinary.com/dats2xfzl/image/upload/v1783514825/20260129_185012_khfgpz.jpg",
+  "https://res.cloudinary.com/dats2xfzl/image/upload/v1783514445/IMG_20260131_190610_xwqikt.jpg",
+  "https://res.cloudinary.com/dats2xfzl/image/upload/v1783514169/IMG_20260131_190612_fa8aw9.jpg",
+  "https://res.cloudinary.com/dats2xfzl/image/upload/v1783514812/IMG_20260129_195900_q7hpgg.jpg",
+  "https://res.cloudinary.com/dats2xfzl/image/upload/v1783513884/IMG-20260130-WA0014_d0zpxq.jpg",
+  "https://res.cloudinary.com/dats2xfzl/image/upload/v1783513973/IMG-20260129-WA0070_jdllzk.jpg",
+  "https://res.cloudinary.com/dats2xfzl/image/upload/v1783515859/20260129_192623_fnxim8.jpg",
+  "https://res.cloudinary.com/dats2xfzl/image/upload/v1783515886/IMG_20260129_205354_to1clx.jpg",
+  "https://res.cloudinary.com/dats2xfzl/image/upload/v1783514864/20260129_185024_zikwbg.jpg",
+  "https://res.cloudinary.com/dats2xfzl/image/upload/v1783514850/20260129_192700_cfeyvr.jpg",
+  "https://res.cloudinary.com/dats2xfzl/image/upload/v1783515880/20260129_190810_w8mdag.jpg"
 ];
 
 export default function Shaurya() {
@@ -17,7 +22,7 @@ export default function Shaurya() {
       <section
         className="relative h-[75vh] flex items-center justify-center"
         style={{
-          backgroundImage: "url('/fest13.JPG')",
+          backgroundImage: "url('https://res.cloudinary.com/dats2xfzl/image/upload/v1783515886/IMG_20260129_205354_to1clx.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
