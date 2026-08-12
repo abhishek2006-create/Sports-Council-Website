@@ -145,10 +145,10 @@ export default function Contact() {
                 </p>
 
                 <a
-                  href="mailto:jointsecretary1@iiti.ac.in"
+                  href="mailto:ce240004008@iiti.ac.in"
                   className="text-teal-400 text-sm hover:text-emerald-400 transition-colors"
                 >
-                  email id
+                  ce240004008@iiti.ac.in
                 </a>
               </div>
 
@@ -160,10 +160,10 @@ export default function Contact() {
                 </p>
 
                 <a
-                  href="mailto:jointsecretary2@iiti.ac.in"
+                  href="mailto:che240008033@iiti.ac.in"
                   className="text-teal-400 text-sm hover:text-emerald-400 transition-colors"
                 >
-                  jointsecretary2@iiti.ac.in
+                  che240008033@iiti.ac.in
                 </a>
               </div>
 
