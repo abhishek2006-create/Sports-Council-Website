@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Cricket Ground",
+    "description": "A full size Cricket ground with flood lights available and 3 nets nearby.",
+    "image": "/images/facilities/cricket.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Football Ground",
+    "description": "A full size Football ground with night lights too.",
+    "image": "/images/facilities/football.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Basketball Court",
+    "description": "Great for showing u are the next star.",
+    "image": "/images/facilities/basketball.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Badminton Court",
+    "description": "6 super courts in the sports complex along with one in each hostel too.",
+    "image": "/images/facilities/badminton.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Volleyball Court",
+    "description": "3 full size soil courts",
+    "image": "/images/facilities/volleyball.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Tennis Court",
+    "description": "2 courts near the athletic track",
+    "image": "/images/facilities/tennis.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Table Tennis",
+    "description": "3 tables with proper spacing around in the dining hall and one each in hostels too",
+    "image": "/images/facilities/table-tennis.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Gymnasium",
+    "description": "A gym with almost all necessary equipments for ur good fitness.",
+    "image": "/images/facilities/gym.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Swimming Pool",
+    "description": "A full olympic size pool with water polo setup available too.",
+    "image": "/images/facilities/pool.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Athletics Track",
+    "description": "Full 400m track with arrangements for other sports like long jump,discuss throw available too.",
+    "image": "/images/facilities/athletics.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Squash court",
+    "description": "2 courts of the international size.",
+    "image": "/images/facilities/gym.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Hockey Ground",
+    "description": "Our nation's Pride.We have a fully furbished hockey ground on campus",
+    "image": "/images/facilities/gym.jpg"
+  }
+]
