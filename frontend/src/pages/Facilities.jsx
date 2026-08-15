@@ -4,78 +4,61 @@ import facilities from "../pages/Facilitiesdata.json";
 
 const Facilities = () => {
   return (
-    <section className="min-h-screen bg-slate-950 text-white px-6 py-20">
+    <section className="min-h-screen bg-slate-950 text-slate-100 px-6 py-16">
 
-      {/* Heading */}
-      <div className="max-w-7xl mx-auto text-center mb-16">
-
+      <div className="max-w-7xl mx-auto text-center mb-12">
         <motion.h1
-          initial={{ opacity: 0, y: -30 }}
+          initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-4xl md:text-5xl font-bold mb-4"
+          transition={{ duration: 0.5 }}
+          className="text-3xl md:text-4xl font-extrabold mb-3 tracking-tight"
         >
           Sports Facilities
         </motion.h1>
-
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.8 }}
-          className="text-gray-400 max-w-2xl mx-auto text-lg"
+          transition={{ duration: 0.6, delay: 0.1 }}
+          className="text-slate-400 max-w-xl mx-auto text-sm md:text-base"
         >
-          Explore the sports facilities available at IIT Indore.
+          World-class amenities for every athlete.
         </motion.p>
-
       </div>
 
-      {/* Facilities Grid */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
 
         {facilities.map((facility, index) => (
-
           <motion.div
             key={facility.id}
-            initial={{ opacity: 0, y: 40 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{
-              duration: 0.5,
-              delay: index * 0.1
-            }}
-            whileHover={{ y: -8 }}
-            className="bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 hover:border-blue-500 transition-all duration-300 shadow-lg"
+            transition={{ duration: 0.4, delay: index * 0.05 }}
+            whileHover={{ y: -6, scale: 1.02 }}
+            className="group bg-slate-900/60 backdrop-blur-sm rounded-2xl overflow-hidden border border-slate-800/60 hover:border-teal-500/50 hover:shadow-[0_0_20px_rgba(20,184,166,0.15)] transition-all duration-300"
           >
-
-            {/* Image */}
-            <div className="h-56 overflow-hidden">
-
+            {/* Compact Image */}
+            <div className="h-36 overflow-hidden relative">
               <img
                 src={facility.image}
                 alt={facility.name}
-                className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                className="w-full h-full object-cover brightness-110 contrast-125 saturate-110 group-hover:scale-110 transition-transform duration-500"
               />
-
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/20 to-transparent" />
             </div>
 
-            {/* Content */}
-            <div className="p-6">
-
-              <h2 className="text-2xl font-semibold mb-3">
+            {/* Compact Content */}
+            <div className="p-4">
+              <h2 className="text-base font-bold mb-1.5 truncate">
                 {facility.name}
               </h2>
-
-              <p className="text-gray-400 leading-relaxed">
+              <p className="text-slate-400 text-xs leading-relaxed line-clamp-3">
                 {facility.description}
               </p>
-
             </div>
-
           </motion.div>
-
         ))}
 
       </div>
-
     </section>
   );
 };

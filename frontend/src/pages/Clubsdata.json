@@ -39,14 +39,11 @@
       "name": "Ayush Raj",
       "photo": "/images/ayush_raj_Athletics .jpeg"
     },
-<<<<<<< HEAD
     "CoHead": {
       "name": "Prachi Singh",
       "photo": "/images/prachi.png"
     },
-=======
     "previousHeads": [],
->>>>>>> 3b862deb7ebd33e859319ebaf76013a706c9ca27
     "members": [],
     "gallery": [
       "https://res.cloudinary.com/dats2xfzl/image/upload/q_auto/f_auto/v1781971133/Image2_uyvvw9.jpg",
@@ -70,14 +67,11 @@
       "name": "Parv Khandelwal",
       "photo": "/images/parv.png"
     },
-<<<<<<< HEAD
     "CoHead": {
       "name": "Kajal Yadav",
       "photo": "/images/Kajal.jpeg"
     },
-=======
     "previousHeads": [],
->>>>>>> 3b862deb7ebd33e859319ebaf76013a706c9ca27
     "members": [],
     "gallery": [
       "https://res.cloudinary.com/dats2xfzl/image/upload/q_auto/f_auto/v1781971947/INTER_IIT_2024_Team_jkr4hx.jpg",
@@ -161,14 +155,11 @@
       "name": "Aniket Baskey",
       "photo": "/images/aniket.jpeg"
     },
-<<<<<<< HEAD
     "CoHead": {
       "name": "Aditya B",
       "photo": "/images/AdityaB_ch.jpg"
     },
-=======
     "previousHeads": [],
->>>>>>> 3b862deb7ebd33e859319ebaf76013a706c9ca27
     "members": [],
     "gallery": [
       "https://res.cloudinary.com/dats2xfzl/image/upload/q_auto/f_auto/v1781973293/IMG_8059_ewuckp.jpg",
@@ -189,19 +180,16 @@
     "description": "The Hockey Club is one of the most active sports clubs at IIT Indore, committed to nurturing talent and fostering a competitive spirit among students. Through structured training, practice matches, and participation in inter-college tournaments, the club provides a platform for players to enhance their technical skills, physical fitness, and teamwork. The club welcomes enthusiasts of all skill levels and strives to uphold the values of dedication, discipline, and sportsmanship.",
     "membership": "TBD",
     "status": "Coming Soon",
-    "image": "",
+    "image": "https://res.cloudinary.com/dats2xfzl/image/upload/v1786794227/WhatsApp_Image_2026-08-15_at_17.12.28_h5a8fm.jpg",
     "head": {
       "name": "Bhukya Sethu Madhav Naik",
       "photo": "/images/sethu.png"
     },
-<<<<<<< HEAD
     "CoHead": {
       "name": "Vinay Gound",
       "photo": "/images/VinayG.png"
     },
-=======
     "previousHeads": [],
->>>>>>> 3b862deb7ebd33e859319ebaf76013a706c9ca27
     "members": []
   },
 
@@ -216,14 +204,11 @@
       "name": "Kavin Krishnan S",
       "photo": "/images/Kavin_Krishnan_S_Tennis .jpg"
     },
-<<<<<<< HEAD
     "CoHead": {
       "name": "Ram Upadhyay ",
       "photo": "/images/ram.jpeg"
     },
-=======
     "previousHeads": [],
->>>>>>> 3b862deb7ebd33e859319ebaf76013a706c9ca27
     "members": []
   },
 
@@ -236,7 +221,7 @@
     "image": "/images/squash.png",
     "head": {
       "name": "TBD",
-      "photo": ""
+      "photo": "/images/kour.jpeg"
     },
     "previousHeads": [],
     "members": []
@@ -321,7 +306,7 @@
     "description": "Aims and objectives of Yoga Club: To enable the student to have good health, to practice mental hygiene, to possess emotional stability, to integrate moral values, and to attain higher level of consciousness.",
     "membership": "Open to all",
     "status": "Active",
-    "image": "",
+    "image": "https://res.cloudinary.com/dats2xfzl/image/upload/v1786794062/Gemini_Generated_Image_zd2wapzd2wapzd2w_izmwqj.png",
     "head": {
       "name": "Savan Rajeshbhai Gorasia",
       "photo": "/images/SavanRajeshbhaiGorasia.jpeg"

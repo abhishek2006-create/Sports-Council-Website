@@ -122,14 +122,11 @@ export default function Home() {
 
       <section className="relative bg-slate-950 min-h-[90vh] flex items-center px-6 md:px-16 py-12 overflow-hidden">
 
-        <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-teal-500/10 rounded-full blur-[120px] pointer-events-none"></div>
-        <div className="absolute bottom-10 right-1/4 w-[400px] h-[400px] bg-emerald-500/10 rounded-full blur-[120px] pointer-events-none"></div>
-
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
           <img
             src="/images/sports_logo.jpeg"
             alt="Sports Council Logo Background"
-            className="w-[280px] h-[280px] sm:w-[450px] sm:h-[450px] md:w-[600px] md:h-[600px] object-cover opacity-[0.06] rounded-full filter blur-[1px]"
+            className="w-[280px] h-[280px] sm:w-[450px] sm:h-[450px] md:w-[600px] md:h-[600px] object-cover opacity-[0.14] rounded-full"
           />
         </div>
 
@@ -141,18 +138,18 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="space-y-6 text-center md:text-left"
           >
-            <span className="text-teal-400 text-xs font-black uppercase tracking-[0.3em] block">
+            <span className="text-teal-300 text-xs font-black uppercase tracking-[0.3em] block">
               Sports Council Management
             </span>
             <h1 className="text-5xl md:text-7xl font-black leading-tight tracking-tight">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-emerald-400">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-emerald-300">
                 Sports Council
               </span>
             </h1>
-            <h2 className="text-4xl md:text-5xl font-black text-slate-100 tracking-tight">
+            <h2 className="text-4xl md:text-5xl font-black text-blue-950 tracking-tight">
               IIT Indore
             </h2>
-            <p className="text-slate-400 text-lg md:text-xl leading-relaxed max-w-lg mx-auto md:mx-0">
+            <p className="text-slate-200 text-lg md:text-xl leading-relaxed max-w-lg mx-auto md:mx-0">
               Dedicated to fostering a vibrant sports culture, promoting physical
               well-being, and achieving excellence in various athletic disciplines at IIT Indore.
             </p>
@@ -174,7 +171,7 @@ export default function Home() {
           >
             <div className="p-1 rounded-3xl bg-gradient-to-br from-teal-400/40 to-emerald-400/40">
               <img
-                src="/images/G2.png"
+                src="https://res.cloudinary.com/dats2xfzl/image/upload/v1786782062/IMG_7431_zxnvmx.jpg"
                 alt="IIT Indore Sports Team"
                 className="w-full h-auto object-cover rounded-3xl shadow-2xl bg-slate-950"
               />
@@ -188,10 +185,11 @@ export default function Home() {
             <span className="text-teal-400 font-semibold uppercase tracking-wider text-xs block mb-2">
               Our Pride
             </span>
-            <h2 className="text-4xl md:text-5xl font-black text-white tracking-tight">
-              Flagship <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-emerald-400">Events</span>
+            <h2 className="text-4xl md:text-5xl font-black tracking-tight">
+              <span className="text-blue-300">Flagship</span>{' '}
+              <span className="text-teal-300">Events</span>
             </h2>
-            <div className="h-1 w-20 bg-gradient-to-r from-teal-400 to-emerald-400 mx-auto mt-4 rounded-full"></div>
+            <div className="h-1 w-20 bg-gradient-to-r from-teal-300 to-emerald-300 mx-auto mt-4 rounded-full"></div>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -199,17 +197,17 @@ export default function Home() {
               <motion.div
                 key={event.id}
                 whileHover={{ y: -6 }}
-                className="bg-slate-900/60 backdrop-blur-md rounded-2xl border border-slate-800/80 overflow-hidden shadow-lg flex flex-col h-full group transition-all duration-300"
+                className="bg-slate-900/60 rounded-2xl border border-slate-800/80 overflow-hidden shadow-lg flex flex-col h-full group transition-all duration-300"
               >
                 <div className="relative h-48 overflow-hidden">
                   <img
                     src={event.img}
                     alt={event.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover brightness-95 group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-slate-950/40"></div>
+                  <div className="absolute inset-0 bg-slate-950/20"></div>
                   <div className="absolute bottom-4 left-4 right-4">
-                    <span className="text-teal-400 font-bold uppercase tracking-wider text-[10px] block mb-1">
+                    <span className="text-teal-200 font-bold uppercase tracking-wider text-[10px] block mb-1">
                       {event.tagline}
                     </span>
                     <h3 className="text-2xl font-black text-white leading-tight">
@@ -219,7 +217,7 @@ export default function Home() {
                 </div>
 
                 <div className="p-6 flex flex-col justify-between flex-grow">
-                  <p className="text-slate-400 text-sm leading-relaxed mb-6 line-clamp-3">
+                  <p className="text-slate-200 text-sm leading-relaxed mb-6 line-clamp-3">
                     {event.description}
                   </p>
                   <div className="flex gap-3 mt-auto">
@@ -251,7 +249,7 @@ export default function Home() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setActiveEvent(null)}
-              className="absolute inset-0 bg-slate-950/80 backdrop-blur-md"
+              className="absolute inset-0 bg-slate-950/80"
             />
 
             <motion.div
@@ -277,7 +275,7 @@ export default function Home() {
                   </svg>
                 </button>
                 <div className="absolute bottom-6 left-6 md:left-8">
-                  <span className="text-teal-400 font-bold uppercase tracking-widest text-xs md:text-sm">
+                  <span className="text-teal-200 font-bold uppercase tracking-widest text-xs md:text-sm">
                     {activeEvent.tagline}
                   </span>
                   <h2 className="text-3xl md:text-5xl font-black text-white mt-1">
@@ -290,7 +288,7 @@ export default function Home() {
               <div className="p-6 md:p-8 space-y-8 flex-grow">
                 {/* Description */}
                 <div>
-                  <p className="text-slate-300 text-base md:text-lg leading-relaxed text-justify">
+                  <p className="text-slate-100 text-base md:text-lg leading-relaxed text-justify">
                     {activeEvent.description}
                   </p>
                 </div>

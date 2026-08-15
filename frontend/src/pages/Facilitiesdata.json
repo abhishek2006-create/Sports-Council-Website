@@ -3,72 +3,72 @@
     "id": 1,
     "name": "Cricket Ground",
     "description": "A full size Cricket ground with flood lights available and 3 nets nearby.",
-    "image": "/images/facilities/cricket.jpg"
+    "image": "https://res.cloudinary.com/dats2xfzl/image/upload/v1786784442/WhatsApp_Image_2026-08-15_at_14.29.49_abig4e.jpg"
   },
   {
     "id": 2,
     "name": "Football Ground",
     "description": "A full size Football ground with night lights too.",
-    "image": "/images/facilities/football.jpg"
+    "image": "https://res.cloudinary.com/dats2xfzl/image/upload/v1786782066/DJI_0232_sw2keu.jpg"
   },
   {
     "id": 3,
     "name": "Basketball Court",
     "description": "Great for showing u are the next star.",
-    "image": "/images/facilities/basketball.jpg"
+    "image": "https://res.cloudinary.com/dats2xfzl/image/upload/v1783514850/20260129_192700_cfeyvr.jpg"
   },
   {
     "id": 4,
     "name": "Badminton Court",
     "description": "6 super courts in the sports complex along with one in each hostel too.",
-    "image": "/images/facilities/badminton.jpg"
+    "image": "https://res.cloudinary.com/dats2xfzl/image/upload/v1783514445/IMG_20260131_190610_xwqikt.jpg"
   },
   {
     "id": 5,
     "name": "Volleyball Court",
     "description": "3 full size soil courts",
-    "image": "/images/facilities/volleyball.jpg"
+    "image": "https://res.cloudinary.com/dats2xfzl/image/upload/v1783513973/IMG-20260129-WA0070_jdllzk.jpg"
   },
   {
     "id": 6,
     "name": "Tennis Court",
     "description": "2 courts near the athletic track",
-    "image": "/images/facilities/tennis.jpg"
+    "image": "https://res.cloudinary.com/dats2xfzl/image/upload/v1786785822/WhatsApp_Image_2026-08-15_at_14.35.20_hg4bjy.jpg"
   },
   {
     "id": 7,
     "name": "Table Tennis",
     "description": "3 tables with proper spacing around in the dining hall and one each in hostels too",
-    "image": "/images/facilities/table-tennis.jpg"
+    "image": "https://res.cloudinary.com/dats2xfzl/image/upload/v1781974422/IMG-20260619-WA0023_swenuw.jpg"
   },
   {
     "id": 8,
     "name": "Gymnasium",
     "description": "A gym with almost all necessary equipments for ur good fitness.",
-    "image": "/images/facilities/gym.jpg"
+    "image": "https://res.cloudinary.com/dats2xfzl/image/upload/v1786783640/Gemini_Generated_Image_qwybvzqwybvzqwyb_yb2ivb.png"
   },
   {
     "id": 9,
     "name": "Swimming Pool",
     "description": "A full olympic size pool with water polo setup available too.",
-    "image": "/images/facilities/pool.jpg"
+    "image": "https://res.cloudinary.com/dats2xfzl/image/upload/v1786782063/IMG_9536_t31kcx.jpg"
   },
   {
     "id": 10,
     "name": "Athletics Track",
     "description": "Full 400m track with arrangements for other sports like long jump,discuss throw available too.",
-    "image": "/images/facilities/athletics.jpg"
+    "image": "https://res.cloudinary.com/dats2xfzl/image/upload/v1786782063/IMG_7157_a59iz2.jpg"
   },
   {
     "id": 11,
     "name": "Squash court",
     "description": "2 courts of the international size.",
-    "image": "/images/facilities/gym.jpg"
+    "image": "https://res.cloudinary.com/dats2xfzl/image/upload/v1786782064/1P3A4736_jwl8k4.jpg"
   },
   {
     "id": 12,
     "name": "Hockey Ground",
     "description": "Our nation's Pride.We have a fully furbished hockey ground on campus",
-    "image": "/images/facilities/gym.jpg"
+    "image": "https://res.cloudinary.com/dats2xfzl/image/upload/v1786784442/WhatsApp_Image_2026-08-15_at_14.27.32_p2t4vt.jpg"
   }
 ]

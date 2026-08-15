@@ -24,7 +24,7 @@ export default function Footer() {
 
             <div className="flex flex-col gap-2">
               <Link
-                to="/clubs"
+                to="/facilities"
                 className="text-slate-400 hover:text-[#28D7C5] transition-colors"
               >
                 Sports Facilities

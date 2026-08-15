@@ -7,27 +7,16 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navLinks = [
-<<<<<<< HEAD
     { name: "Home", path: "/" },
     { name: "Events", path: "/events" },
     { name: "Team", path: "/team" },
     { name: "Functionaries", path: "/staff" },
     { name: "Clubs", path: "/clubs" },
+    { name: "Facilities", path: "/facilities" },
     { name: "Gallery", path: "/gallery" },
-    { name: "Contact Us", path: "/contact" },
+    { name: "Contact", path: "/contact" },
+    { name: "Feedback", path: "/feedback" },
   ];
-=======
-  { name: "Home", path: "/" },
-  { name: "Events", path: "/events" },
-  { name: "Team", path: "/team" },
-  { name: "Staff", path: "/staff" },
-  { name: "Clubs", path: "/clubs" },
-  { name: "Facilities", path: "/facilities" },
-  { name: "Gallery", path: "/gallery" },
-  { name: "Feedback", path: "/feedback" },
-  { name: "Contact", path: "/contact" },
-];
->>>>>>> 3b862deb7ebd33e859319ebaf76013a706c9ca27
 
   return (
     <header className="bg-[#020B2D] border-b border-[#1E3A5F] sticky top-0 z-50 px-6 py-4">
@@ -36,9 +25,9 @@ const Navbar = () => {
           <img
             src={sports_logo}
             alt="Logo"
-            className="w-12 h-12 rounded-full object-cover border-2 border-[#28D7C5]"
+            className="w-12 h-12 rounded-full object-cover border-2 border-[#B05B4C]"
           />
-          <h1 className="text-lg md:text-xl font-bold text-[#28D7C5]">
+          <h1 className="text-lg md:text-xl font-bold text-[#F3C4B0]">
             IIT Indore Sports Council
           </h1>
         </div>
@@ -49,9 +38,9 @@ const Navbar = () => {
               key={index}
               to={link.path}
               className={({ isActive }) =>
-                `relative py-1 text-sm font-medium transition-colors duration-300 ${isActive
-                  ? "text-[#28D7C5]"
-                  : "text-slate-300 hover:text-[#28D7C5]"
+                `relative py-1 text-sm font-semibold tracking-wide transition-colors duration-300 ${isActive
+                  ? "text-[#F3C4B0]"
+                  : "text-white hover:text-[#F3C4B0]"
                 }`
               }
             >
@@ -60,7 +49,7 @@ const Navbar = () => {
                   {link.name}
 
                   <span
-                    className={`absolute left-0 -bottom-1 h-[2px] bg-[#28D7C5]
+                    className={`absolute left-0 -bottom-1 h-[2px] bg-[#F3C4B0]
             transition-all duration-500 ease-in-out
             ${isActive ? "w-full" : "w-0"}`}
                   />
@@ -71,7 +60,7 @@ const Navbar = () => {
         </nav>
 
         <button
-          className="md:hidden text-[#28D7C5] text-3xl"
+          className="md:hidden text-[#F3C4B0] text-3xl"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           {menuOpen ? <FiX /> : <FiMenu />}
@@ -92,9 +81,9 @@ const Navbar = () => {
         ${menuOpen ? "translate-x-0" : "-translate-x-full"}`}
       >
         <div className="flex justify-between items-center p-5 border-b border-[#1E3A5F]">
-          <h2 className="text-[#28D7C5] font-bold text-xl">Menu</h2>
+          <h2 className="text-[#F3C4B0] font-bold text-xl">Menu</h2>
           <FiX
-            className="text-slate-300 cursor-pointer text-2xl"
+            className="text-white cursor-pointer text-2xl"
             onClick={() => setMenuOpen(false)}
           />
         </div>
@@ -107,8 +96,8 @@ const Navbar = () => {
               onClick={() => setMenuOpen(false)}
               className={({ isActive }) =>
                 `px-4 py-3 rounded-lg transition-all duration-500 ease-out ${isActive
-                  ? "bg-[#28D7C5]/10 text-[#28D7C5] border-l-4 border-[#28D7C5]"
-                  : "bg-[#0D214D] text-slate-200 hover:bg-[#28D7C5]/10 hover:text-[#28D7C5]"
+                  ? "bg-[#B05B4C]/10 text-[#F3C4B0] border-l-4 border-[#F3C4B0]"
+                  : "bg-[#0D214D] text-white hover:bg-[#B05B4C]/10 hover:text-[#F3C4B0]"
                 }`
               }
             >

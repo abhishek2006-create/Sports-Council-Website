@@ -13,7 +13,7 @@ const galleryImages = [
 
 export default function Josh() {
   return (
-    <div className="min-h-screen bg-slate-950 text-white font-poppins">
+    <div className="min-h-screen bg-slate-950 text-slate-100 font-poppins">
 
       {/* Hero */}
       <section
@@ -26,12 +26,12 @@ export default function Josh() {
       >
         <div className="absolute inset-0 bg-black/70"></div>
 
-        <div className="relative z-10 text-center px-6">
+        <div className="relative z-10 text-center px-6 text-white">
           <span className="text-teal-300 uppercase tracking-[0.35em] font-bold">
             UNLEASH THE FIRE WITHIN
           </span>
 
-          <h1 className="text-6xl md:text-8xl font-black mt-5">
+          <h1 className="text-6xl md:text-8xl font-black mt-5 text-white">
             JOSH
           </h1>
 

@@ -26,7 +26,7 @@ const galleryImages = [
 
 export default function Fest() {
   return (
-    <div className="min-h-screen bg-slate-950 text-white">
+    <div className="min-h-screen bg-slate-950 text-slate-100">
       <div className="fixed inset-0 -z-10 overflow-hidden">
         <div className="absolute left-0 top-0 h-[500px] w-[500px] rounded-full bg-teal-500/20 blur-[120px]"></div>
 
@@ -55,7 +55,7 @@ export default function Fest() {
         ></motion.div>
 
         <motion.div
-          className="relative z-10 text-center px-6"
+          className="relative z-10 text-center px-6 text-white"
           initial="hidden"
           animate="show"
           variants={{

@@ -17,7 +17,7 @@ const galleryImages = [
 
 export default function Shaurya() {
   return (
-    <div className="min-h-screen bg-slate-950 text-white font-poppins">
+    <div className="min-h-screen bg-slate-950 text-slate-100 font-poppins">
 
       <section
         className="relative h-[75vh] flex items-center justify-center"
@@ -29,12 +29,12 @@ export default function Shaurya() {
       >
         <div className="absolute inset-0 bg-black/70"></div>
 
-        <div className="relative z-10 text-center px-6">
+        <div className="relative z-10 text-center px-6 text-white">
           <span className="text-teal-300 uppercase tracking-[0.35em] font-bold">
             Strength • Spirit • Victory
           </span>
 
-          <h1 className="text-6xl md:text-8xl font-black mt-5">
+          <h1 className="text-6xl md:text-8xl font-black mt-5 text-white">
             Shaurya
           </h1>
 
