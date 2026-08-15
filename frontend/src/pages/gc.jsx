@@ -208,7 +208,7 @@ export default function GC() {
 
             {[
               ["6+", "Teams"],
-              ["20+", "Sports"],
+              ["15+", "Sports"],
               ["1000+", "Participants"],
               ["1", "Champion"]
             ].map((item, index) => (

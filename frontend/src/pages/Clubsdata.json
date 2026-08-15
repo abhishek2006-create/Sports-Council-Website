@@ -30,6 +30,10 @@
       "name": "Ayush Raj",
       "photo": "/images/ayush_raj_Athletics .jpeg"
     },
+    "CoHead": {
+      "name": "Prachi Singh",
+      "photo": "/images/prachi.png"
+    },
     "members": [],
     "gallery": [
       "https://res.cloudinary.com/dats2xfzl/image/upload/q_auto/f_auto/v1781971133/Image2_uyvvw9.jpg",
@@ -51,6 +55,10 @@
     "head": {
       "name": "Parv Khandelwal",
       "photo": "/images/parv.png"
+    },
+    "CoHead": {
+      "name": "Kajal Yadav",
+      "photo": "/images/Kajal.jpeg"
     },
     "members": [],
     "gallery": [
@@ -128,6 +136,10 @@
       "name": "Aniket Baskey",
       "photo": "/images/aniket.jpeg"
     },
+    "CoHead": {
+      "name": "Aditya B",
+      "photo": "/images/AdityaB_ch.jpg"
+    },
     "members": [],
     "gallery": [
       "https://res.cloudinary.com/dats2xfzl/image/upload/q_auto/f_auto/v1781973293/IMG_8059_ewuckp.jpg",
@@ -152,6 +164,10 @@
       "name": "Bhukya Sethu Madhav Naik",
       "photo": "/images/sethu.png"
     },
+    "CoHead": {
+      "name": "Vinay Gound",
+      "photo": "/images/VinayG.png"
+    },
     "members": []
   },
   {
@@ -164,6 +180,10 @@
     "head": {
       "name": "Kavin Krishnan S",
       "photo": "/images/Kavin_Krishnan_S_Tennis .jpg"
+    },
+    "CoHead": {
+      "name": "Ram Upadhyay ",
+      "photo": "/images/ram.jpeg"
     },
     "members": []
   },

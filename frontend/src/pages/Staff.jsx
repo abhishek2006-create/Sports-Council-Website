@@ -14,11 +14,12 @@ const ContactIcon = ({ icon, href }) => (
 export default function Staff() {
 
     const faculty = [
-        { key: "Staff01", title: "Prof. Amod C. Umarikar ", Subtitle: " Dean of Student Affairs", email: "dsoa@iiti.ac.in", img: "/images/dosa_sir.jpeg" },
-        { key: "Staff02", title: "Mr. Vishal Pillai ", Subtitle: "Deputy Sports Officer", email: "dso@iiti.ac.in", img: "/images/pillai_sir.png" },
-        { key: "Staff02", title: "Dr. Swaminathan sir", Subtitle: "Convenor", email: "swamiramabadran@iiti.ac.in", img: "/images/swami_sir.png" },
-        { key: "Staff04", title: "Dr. Gaurav chahan", Subtitle: "Co-convenor", email: "gaurav@iiti.ac.in", img: "/images/gaurav_sir.png" },
-        { key: "Staff05", title: "Dr. Bibekananda Maji", Subtitle: "Co-convenor", email: "bibekanandamaji@iiti.ac.in", img: "/images/maji_sir.jpeg" }
+        { key: "Staff01", title: "Prof. Amod C. Umarikar ", Subtitle: " Dean of Student Affairs", email: "dosa@iiti.ac.in", img: "/images/dosa_sir.jpeg" },
+        { key: "Staff02", title: "Dr. Swaminathan Ramabadran", Subtitle: "Convenor", email: "prof-incharge-sports@iiti.ac.in", img: "/images/swami_sir.png" },
+        { key: "Staff03", title: "Dr. Bibekananda Maji", Subtitle: "Co-convenor", email: "bmaji@iiti.ac.in", img: "/images/maji_sir.jpeg" },
+        { key: "Staff04", title: "Dr. Gaurav chahan", Subtitle: "Co-convenor-2", email: "gaurav@iiti.ac.in", img: "/images/gaurav_sir.png" },
+
+        { key: "Staff05", title: "Mr. Vishal Pillai ", Subtitle: "Deputy Sports Officer", email: "dso@iiti.ac.in", img: "/images/pillai_sir.png" },
     ];
 
     const containerVariants = {
@@ -38,7 +39,7 @@ export default function Staff() {
     };
 
     return (
-        <div className="bg-slate-950 min-h-screen w-full pt-5 pb-20 px-4 font-poppins text-slate-100 selection:bg-teal-500 selection:text-white relative overflow-hidden">
+        <div className="bg-slate-950 min-h-[85vh] w-full pt-3 pb-8 px-4 font-poppins text-slate-100 selection:bg-teal-500 selection:text-white relative overflow-hidden">
 
             <motion.div
                 animate={{ scale: [1, 1.08, 1], opacity: [0.12, 0.2, 0.12] }}
@@ -57,7 +58,7 @@ export default function Staff() {
                     initial={{ opacity: 0, y: 35 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
-                    className="text-center mb-20 relative"
+                    className="text-center mb-8 relative"
                 >
 
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-teal-500 opacity-20 blur-3xl rounded-full pointer-events-none"></div>
@@ -66,7 +67,7 @@ export default function Staff() {
                         Our Pillars
                     </span>
                     <h1 className="text-4xl md:text-5xl font-black text-slate-100 mb-6 relative z-10 tracking-tight">
-                        Faculty & <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-emerald-400">Staff</span>
+                        Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-emerald-400">Functionaries</span>
                     </h1>
                     <motion.div
                         initial={{ width: 0 }}
@@ -80,20 +81,20 @@ export default function Staff() {
                     variants={containerVariants}
                     initial="hidden"
                     animate="show"
-                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center"
+                    className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 max-w-7xl mx-auto"
                 >
                     {faculty.map((member) => (
 
                         <motion.div
                             key={member.key}
                             variants={itemVariants}
-                            whileHover={{ y: -8 }}
-                            className="group relative w-full bg-slate-900/60 backdrop-blur-md rounded-[2rem] border border-slate-800/80 hover:border-teal-500/30 p-6 flex flex-col items-center text-center transition-all duration-500 hover:shadow-[0_20px_40px_rgba(20,184,166,0.15)] overflow-hidden"
+                            whileHover={{ y: -5 }}
+                            className="group relative h-full w-full bg-slate-900/60 backdrop-blur-md rounded-2xl border border-slate-800/80 hover:border-teal-500/30 p-5 flex flex-col items-center text-center transition-all duration-500 hover:shadow-[0_15px_30px_rgba(20,184,166,0.12)] overflow-hidden"
                         >
 
-                            <div className="absolute top-0 right-0 w-24 h-24 bg-teal-500/5 rounded-bl-full group-hover:bg-teal-500/10 transition-colors pointer-events-none"></div>
+                            <div className="absolute top-0 right-0 w-16 h-16 bg-teal-500/5 rounded-bl-full group-hover:bg-teal-500/10 transition-colors pointer-events-none"></div>
 
-                            <div className="relative mb-6 w-32 h-32 z-10">
+                            <div className="relative mb-4 w-28 h-28 z-10">
                                 <div className="absolute inset-0 bg-teal-500 rounded-full opacity-0 group-hover:opacity-20 blur-md transition-opacity duration-500"></div>
                                 <motion.img
                                     src={member.img}
@@ -109,15 +110,15 @@ export default function Staff() {
                                 </div>
                             </div>
 
-                            <h3 className="text-xl font-black text-slate-100 mb-1 group-hover:text-teal-400 transition-colors relative z-10">
+                            <h3 className="text-lg font-black text-slate-100 mb-1 group-hover:text-teal-400 transition-colors relative z-10 w-full truncate">
                                 {member.title}
                             </h3>
-                            <p className="text-xs font-bold uppercase tracking-widest text-slate-500 mb-6 relative z-10">
+                            <p className="text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-3 relative z-10">
                                 {member.Subtitle}
                             </p>
 
 
-                            <div className="w-full h-px bg-slate-800 mb-6 group-hover:bg-teal-500/20 transition-colors relative z-10"></div>
+                            <div className="w-full h-px bg-slate-800 mb-4 group-hover:bg-teal-500/20 transition-colors relative z-10"></div>
 
                             <div className="space-y-3 w-full relative z-10">
 

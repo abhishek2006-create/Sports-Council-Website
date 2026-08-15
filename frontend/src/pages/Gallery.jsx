@@ -14,21 +14,21 @@ export default function Gallery() {
   }, []);
 
   return (
-    <div className="pt-5 pb-20 min-h-screen font-poppins bg-slate-950 text-slate-100 selection:bg-teal-500 selection:text-white">
+    <div className="pt-3 pb-8 min-h-[85vh] font-poppins bg-slate-950 text-slate-100 selection:bg-teal-500 selection:text-white">
       <div className="w-full max-w-[1400px] mx-auto px-4 md:px-8 relative overflow-hidden">
 
 
-        <div className="text-center mb-16 relative">
+        <div className="text-center mb-8 relative">
 
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-teal-500 opacity-20 blur-3xl rounded-full pointer-events-none"></div>
 
-          <span className="text-teal-400 text-xs font-black uppercase tracking-[0.4em] block mb-3 relative z-10">
+          <span className="text-teal-400 text-xs font-black uppercase tracking-[0.4em] block mb-2 relative z-10">
             Visual Journey
           </span>
-          <h1 className="text-5xl md:text-7xl font-black text-slate-100 leading-none mb-6 relative z-10 tracking-tight">
+          <h1 className="text-4xl md:text-5xl font-black text-slate-100 leading-none mb-3 relative z-10 tracking-tight">
             Event <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-emerald-400">Gallery</span>
           </h1>
-          <div className="w-24 h-1.5 bg-teal-500 mx-auto rounded-full relative z-10"></div>
+          <div className="w-20 h-1 bg-teal-500 mx-auto rounded-full relative z-10"></div>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-6 animate-fadeIn">
@@ -37,7 +37,7 @@ export default function Gallery() {
               key={img.id || index}
               type="button"
               onClick={() => setSelectedImage(img)}
-              className="group relative h-64 w-full overflow-hidden rounded-3xl bg-slate-900/60 backdrop-blur-sm shadow-md focus:outline-none transition-all duration-500 hover:-translate-y-2 hover:shadow-teal-500/20"
+              className="group relative h-48 w-full overflow-hidden rounded-2xl bg-slate-900/60 backdrop-blur-sm shadow-md focus:outline-none transition-all duration-500 hover:-translate-y-1 hover:shadow-teal-500/20"
             >
               <img
                 src={img.src}

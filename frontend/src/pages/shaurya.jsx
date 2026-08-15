@@ -18,7 +18,7 @@ const galleryImages = [
 export default function Shaurya() {
   return (
     <div className="min-h-screen bg-slate-950 text-white font-poppins">
-      {/* Hero */}
+
       <section
         className="relative h-[75vh] flex items-center justify-center"
         style={{
@@ -140,7 +140,7 @@ export default function Shaurya() {
           <div className="grid md:grid-cols-4 gap-8">
             {[
               ["10+", "Events"],
-              ["500+", "Participants"],
+              ["750+", "Participants"],
               ["Multiple", "Teams"],
               ["1", "Spirit"],
             ].map((item, index) => (

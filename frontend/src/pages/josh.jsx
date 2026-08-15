@@ -164,10 +164,10 @@ export default function Josh() {
           <div className="grid md:grid-cols-4 gap-8">
 
             {[
-              ["20+", "Sports"],
-              ["500+", "Participants"],
-              ["100+", "Matches"],
-              ["3 Days", "Celebration"]
+              ["10+", "Sports"],
+              ["400+", "Participants"],
+              ["50+", "Matches"],
+              ["20+ Days", "Celebration"]
             ].map((item, index) => (
 
               <div

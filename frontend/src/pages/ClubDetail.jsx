@@ -58,24 +58,67 @@ export default function ClubDetail() {
         <hr className="my-12 border-slate-800" />
 
         <div className="mb-16">
-          <h3 className="text-center text-xs font-black uppercase tracking-[0.3em] text-teal-400 mb-8">Club Leadership</h3>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
-            className="flex flex-col items-center"
+          <h3 className="text-center text-xs font-black uppercase tracking-[0.3em] text-teal-400 mb-8">
+            Club Leadership
+          </h3>
+
+          <div
+            className={`grid gap-10 justify-items-center ${club.CoHead?.name ? "grid-cols-1 md:grid-cols-2" : "grid-cols-1"
+              }`}
           >
-            <div className="relative group">
-              <div className="absolute -inset-1 bg-teal-500 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-300"></div>
-              <img
-                src={club.head?.photo || "https://via.placeholder.com/150"}
-                alt={club.head?.name}
-                className="relative w-32 h-32 rounded-full object-cover border-4 border-slate-950 shadow-lg bg-slate-800"
-              />
-            </div>
-            <h4 className="mt-4 text-2xl font-black text-slate-100">{club.head?.name || "Lead Name"}</h4>
-            <p className="text-teal-400 font-bold uppercase tracking-widest text-sm">Club Head</p>
-          </motion.div>
+            {/* Club Head */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3 }}
+              className="flex flex-col items-center"
+            >
+              <div className="relative group">
+                <div className="absolute -inset-1 bg-teal-500 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-300"></div>
+
+                <img
+                  src={club.head?.photo || "https://via.placeholder.com/150"}
+                  alt={club.head?.name || "Club Head"}
+                  className="relative w-32 h-32 rounded-full object-cover border-4 border-slate-950 shadow-lg bg-slate-800"
+                />
+              </div>
+
+              <h4 className="mt-4 text-2xl font-black text-slate-100">
+                {club.head?.name || "Lead Name"}
+              </h4>
+
+              <p className="text-teal-400 font-bold uppercase tracking-widest text-sm">
+                Club Head
+              </p>
+            </motion.div>
+
+            {club.CoHead?.name && (
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.4 }}
+                className="flex flex-col items-center"
+              >
+                <div className="relative group">
+                  <div className="absolute -inset-1 bg-teal-500 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-300"></div>
+
+                  <img
+                    src={club.CoHead.photo || "https://via.placeholder.com/150"}
+                    alt={club.CoHead.name}
+                    className="relative w-32 h-32 rounded-full object-cover border-4 border-slate-950 shadow-lg bg-slate-800"
+                  />
+                </div>
+
+                <h4 className="mt-4 text-2xl font-black text-slate-100">
+                  {club.CoHead.name}
+                </h4>
+
+                <p className="text-teal-400 font-bold uppercase tracking-widest text-sm">
+                  Co-Head
+                </p>
+              </motion.div>
+            )}
+          </div>
         </div>
 
         {/* <div className="mb-16">

@@ -69,18 +69,18 @@ export default function ClubsGallery() {
           variants={containerVariants}
           initial="hidden"
           animate="show"
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 max-w-7xl mx-auto"
+          className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 max-w-7xl mx-auto"
         >
           {clubs.map((club) => (
             <motion.div key={club.id} variants={itemVariants}>
               <Link to={`/clubs/${club.name}`} className="group no-underline">
                 <motion.div
-                  whileHover={{ y: -8 }}
+                  whileHover={{ y: -6 }}
                   transition={{ duration: 0.3 }}
-                  className="relative bg-slate-900/60 backdrop-blur-md rounded-3xl overflow-hidden border border-slate-800/80 shadow-lg hover:shadow-[0_20px_40px_rgba(20,184,166,0.15)] hover:border-teal-500/30 transition-all duration-500"
+                  className="relative bg-slate-900/60 backdrop-blur-md rounded-2xl overflow-hidden border border-slate-800/80 shadow-lg hover:shadow-[0_15px_30px_rgba(20,184,166,0.12)] hover:border-teal-500/30 transition-all duration-500"
                 >
 
-                  <div className="absolute top-0 right-0 w-24 h-24 bg-teal-500/5 rounded-bl-full group-hover:bg-teal-500/10 transition-colors pointer-events-none"></div>
+                  <div className="absolute top-0 right-0 w-16 h-16 bg-teal-500/5 rounded-bl-full group-hover:bg-teal-500/10 transition-colors pointer-events-none"></div>
 
                   <div className="relative overflow-hidden">
                     <motion.img
@@ -89,21 +89,21 @@ export default function ClubsGallery() {
                         "https://imgs.search.brave.com/IwVBQDwOl6ndfg_gEt79gTw0Oza_V68JpuFgCUh8BFI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBnLzA4LzA1LzIzLzc4LzM2MF9GXzgwNTIzNzgwMV8xYm5oYkZ2aWl6VVJkSUVGeVRXNWlDaEFia0k1Y1VuWS5qcGc"
                       }
                       alt={club.name}
-                      className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110"
+                      className="w-full h-44 object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-slate-950/30 group-hover:bg-slate-950/10 transition-all duration-500" />
                     <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-slate-950/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                   </div>
 
-                  <div className="p-8 text-center">
-                    <h3 className="text-2xl font-black text-slate-100 group-hover:text-teal-400 transition-colors duration-300">
+                  <div className="p-5 text-center">
+                    <h3 className="text-lg font-black text-slate-100 group-hover:text-teal-400 transition-colors duration-300 truncate">
                       {club.name}
                     </h3>
-                    <div className="mt-4 flex justify-center items-center">
-                      <p className="text-teal-400 text-xs font-bold uppercase tracking-[0.2em] group-hover:tracking-[0.3em] transition-all duration-300">
+                    <div className="mt-2 flex justify-center items-center">
+                      <p className="text-teal-400 text-[10px] font-bold uppercase tracking-[0.15em] group-hover:tracking-[0.2em] transition-all duration-300">
                         View Details
                       </p>
-                      <span className="ml-2 text-teal-400 transform group-hover:translate-x-2 transition-transform duration-300">
+                      <span className="ml-1.5 text-teal-400 text-xs transform group-hover:translate-x-1.5 transition-transform duration-300">
                         →
                       </span>
                     </div>

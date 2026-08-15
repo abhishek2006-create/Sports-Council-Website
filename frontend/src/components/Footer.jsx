@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <footer className="bg-[#020B2D] border-t border-[#1E3A5F]">
-      <div className="max-w-7xl mx-auto px-6 py-12">
-        <div className="grid md:grid-cols-3 gap-10">
+      <div className="max-w-7xl mx-auto px-6 py-6">
+        <div className="grid md:grid-cols-3 gap-6">
 
           <div>
             <h2 className="text-2xl font-bold text-[#28D7C5]">
@@ -69,7 +69,7 @@ export default function Footer() {
             </p>
           </div>
         </div>
-        <div className="border-t border-[#1E3A5F] mt-12 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-sm">
+        <div className="border-t border-[#1E3A5F] mt-6 pt-4 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-sm">
 
           <div>
             © {new Date().getFullYear()} Sports Council | IIT Indore

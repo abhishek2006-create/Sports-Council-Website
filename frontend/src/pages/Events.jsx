@@ -111,9 +111,8 @@ export default function Events() {
   };
 
   return (
-    <div className="pt-5 pb-20 min-h-screen font-poppins bg-slate-950 text-slate-100 selection:bg-teal-500 selection:text-white relative overflow-hidden">
+    <div className="pt-3 pb-8 min-h-[85vh] font-poppins bg-slate-950 text-slate-100 selection:bg-teal-500 selection:text-white relative overflow-hidden">
 
-      {/* Background Blobs */}
       <motion.div
         animate={{ scale: [1, 1.08, 1], opacity: [0.12, 0.2, 0.12] }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
@@ -131,13 +130,13 @@ export default function Events() {
           initial={{ opacity: 0, y: 35 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16 relative"
+          className="text-center mb-8 relative"
         >
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-teal-500 opacity-20 blur-3xl rounded-full pointer-events-none"></div>
-          <span className="text-teal-400 text-xs font-black uppercase tracking-[0.4em] block mb-3 relative z-10">
+          <span className="text-teal-400 text-xs font-black uppercase tracking-[0.4em] block mb-2 relative z-10">
             Institutional Spirit
           </span>
-          <h1 className="text-5xl md:text-7xl font-black text-slate-100 leading-none mb-6 relative z-10 tracking-tight">
+          <h1 className="text-4xl md:text-5xl font-black text-slate-100 leading-none mb-3 relative z-10 tracking-tight">
             Flagship{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-emerald-400">
               Events
@@ -145,9 +144,9 @@ export default function Events() {
           </h1>
           <motion.div
             initial={{ width: 0 }}
-            animate={{ width: 80 }}
+            animate={{ width: 60 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="h-1.5 bg-gradient-to-r from-teal-400 to-emerald-400 mx-auto rounded-full relative z-10"
+            className="h-1 bg-gradient-to-r from-teal-400 to-emerald-400 mx-auto rounded-full relative z-10"
           />
         </motion.div>
 
@@ -155,7 +154,7 @@ export default function Events() {
           variants={containerVariants}
           initial="hidden"
           animate="show"
-          className="mb-16 w-full overflow-x-auto pb-4 hide-scrollbar"
+          className="mb-8 w-full overflow-x-auto pb-4 hide-scrollbar"
         >
           <div className="flex justify-center min-w-max gap-3 md:gap-4 px-2">
             <motion.button
@@ -262,34 +261,34 @@ export default function Events() {
                     transition={{ duration: 0.5 }}
                     className="flex flex-col items-center justify-center py-10"
                   >
-                    <div className="relative max-w-lg w-full bg-slate-900/50 backdrop-blur-md rounded-[2.5rem] border border-slate-800/80 shadow-2xl shadow-black/30 p-12 md:p-16 text-center overflow-hidden">
+                    <div className="relative max-w-md w-full bg-slate-900/50 backdrop-blur-md rounded-3xl border border-slate-800/80 shadow-2xl shadow-black/30 p-6 md:p-8 text-center overflow-hidden">
 
-                      <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-60 h-60 bg-teal-500/10 rounded-full blur-[80px] pointer-events-none" />
-                      <div className="absolute bottom-0 right-0 w-40 h-40 bg-emerald-500/10 rounded-full blur-[60px] pointer-events-none" />
+                      <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-teal-500/10 rounded-full blur-[60px] pointer-events-none" />
+                      <div className="absolute bottom-0 right-0 w-32 h-32 bg-emerald-500/10 rounded-full blur-[50px] pointer-events-none" />
 
                       <motion.div
                         animate={{
-                          y: [0, -12, 0],
-                          rotate: [0, 5, -5, 0],
+                          y: [0, -8, 0],
+                          rotate: [0, 4, -4, 0],
                         }}
                         transition={{
                           duration: 4,
                           repeat: Infinity,
                           ease: "easeInOut",
                         }}
-                        className="relative z-10 mb-8 inline-flex items-center justify-center"
+                        className="relative z-10 mb-4 inline-flex items-center justify-center"
                       >
                         <div className="relative">
 
                           <motion.div
                             animate={{ scale: [1, 1.3, 1], opacity: [0.3, 0, 0.3] }}
                             transition={{ duration: 2.5, repeat: Infinity, ease: "easeOut" }}
-                            className="absolute inset-0 w-24 h-24 bg-teal-500/20 rounded-full"
+                            className="absolute inset-0 w-16 h-16 bg-teal-500/20 rounded-full"
                           />
 
-                          <div className="w-24 h-24 bg-gradient-to-br from-teal-500/20 to-emerald-500/20 rounded-full flex items-center justify-center border-2 border-teal-500/30 shadow-lg shadow-teal-500/10">
+                          <div className="w-16 h-16 bg-gradient-to-br from-teal-500/20 to-emerald-500/20 rounded-full flex items-center justify-center border-2 border-teal-500/30 shadow-lg shadow-teal-500/10">
                             <svg
-                              className="w-10 h-10 text-teal-400"
+                              className="w-7 h-7 text-teal-400"
                               fill="none"
                               stroke="currentColor"
                               viewBox="0 0 24 24"
@@ -306,24 +305,24 @@ export default function Events() {
                       </motion.div>
 
                       <motion.div
-                        initial={{ opacity: 0, y: 20 }}
+                        initial={{ opacity: 0, y: 15 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.2, duration: 0.5 }}
                         className="relative z-10"
                       >
-                        <h3 className="text-3xl md:text-4xl font-black text-slate-100 mb-3 tracking-tight">
+                        <h3 className="text-2xl md:text-3xl font-black text-slate-100 mb-2 tracking-tight">
                           Coming{" "}
                           <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-emerald-400">
                             Soon
                           </span>
                         </h3>
 
-                        <p className="text-slate-400 text-sm md:text-base leading-relaxed mb-8 max-w-sm mx-auto">
+                        <p className="text-slate-400 text-xs md:text-sm leading-relaxed mb-4 max-w-sm mx-auto">
                           Exciting sports events are being planned! Stay tuned for upcoming
                           tournaments, matches, and competitions.
                         </p>
 
-                        <div className="flex justify-center gap-2 mb-8">
+                        <div className="flex justify-center gap-2 mb-4">
                           {[0, 1, 2].map((i) => (
                             <motion.div
                               key={i}
@@ -337,12 +336,12 @@ export default function Events() {
                                 delay: i * 0.3,
                                 ease: "easeInOut",
                               }}
-                              className="w-2 h-2 bg-teal-400 rounded-full"
+                              className="w-1.5 h-1.5 bg-teal-400 rounded-full"
                             />
                           ))}
                         </div>
 
-                        <div className="w-16 h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent mx-auto mb-6" />
+                        <div className="w-12 h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent mx-auto mb-4" />
 
                         <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-8">
                           <div className="flex items-center justify-center gap-2 text-slate-500 text-xs font-medium">
@@ -385,17 +384,17 @@ export default function Events() {
 
               <motion.div
                 key={selectedCategory}
-                initial={{ opacity: 0, y: 40, scale: 0.98 }}
+                initial={{ opacity: 0, y: 30, scale: 0.99 }}
                 animate={{ opacity: 1, y: 0, scale: 1 }}
-                exit={{ opacity: 0, y: 20, scale: 0.98 }}
-                transition={{ duration: 0.45, ease: "easeOut" }}
-                className="max-w-6xl mx-auto bg-slate-900/60 backdrop-blur-md rounded-[2.5rem] shadow-[0_25px_60px_rgba(0,0,0,0.4)] border border-slate-800/80 overflow-hidden flex flex-col md:flex-row"
+                exit={{ opacity: 0, y: 15, scale: 0.99 }}
+                transition={{ duration: 0.4, ease: "easeOut" }}
+                className="max-w-5xl mx-auto bg-slate-900/60 backdrop-blur-md rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.35)] border border-slate-800/80 overflow-hidden flex flex-col md:flex-row"
               >
                 <motion.div
-                  initial={{ opacity: 0, x: -40 }}
+                  initial={{ opacity: 0, x: -30 }}
                   animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: 0.1 }}
-                  className="md:w-1/2 relative min-h-[300px] md:min-h-[500px]"
+                  transition={{ duration: 0.4, delay: 0.1 }}
+                  className="md:w-1/2 relative min-h-[250px] md:min-h-[380px]"
                 >
                   <img
                     src={categoryContent[selectedCategory].img}
@@ -404,76 +403,76 @@ export default function Events() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-r from-slate-950/60 to-transparent mix-blend-multiply"></div>
                   <motion.div
-                    initial={{ opacity: 0, y: -15 }}
+                    initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.4, delay: 0.3 }}
-                    className="absolute top-6 left-6 bg-slate-950/80 backdrop-blur-sm px-4 py-2 rounded-lg shadow-lg border border-slate-800/80"
+                    transition={{ duration: 0.4, delay: 0.25 }}
+                    className="absolute top-4 left-4 bg-slate-950/80 backdrop-blur-sm px-3.5 py-1.5 rounded-lg shadow-lg border border-slate-800/80"
                   >
-                    <span className="text-teal-400 font-bold text-xs uppercase tracking-wide">
+                    <span className="text-teal-400 font-bold text-[10px] uppercase tracking-wide">
                       Featured Event
                     </span>
                   </motion.div>
                 </motion.div>
 
                 <motion.div
-                  initial={{ opacity: 0, x: 40 }}
+                  initial={{ opacity: 0, x: 30 }}
                   animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: 0.15 }}
-                  className="md:w-1/2 p-10 md:p-16 flex flex-col justify-center bg-slate-900/40 relative"
+                  transition={{ duration: 0.4, delay: 0.15 }}
+                  className="md:w-1/2 p-6 md:p-8 flex flex-col justify-center bg-slate-900/40 relative"
                 >
-                  <div className="absolute top-4 right-6 text-9xl font-black text-slate-800/40 select-none pointer-events-none">
+                  <div className="absolute top-2 right-4 text-8xl font-black text-slate-800/20 select-none pointer-events-none">
                     {selectedCategory.charAt(0)}
                   </div>
 
                   <div className="relative z-10">
                     <motion.div
-                      initial={{ opacity: 0, y: 15 }}
+                      initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.4, delay: 0.25 }}
-                      className="inline-block px-3 py-1 mb-4 border border-teal-500/50 rounded-full"
+                      transition={{ duration: 0.35, delay: 0.2 }}
+                      className="inline-block px-2.5 py-0.5 mb-3 border border-teal-500/40 rounded-full"
                     >
-                      <span className="text-teal-400 font-bold uppercase tracking-[0.1em] text-xs">
+                      <span className="text-teal-400 font-bold uppercase tracking-[0.1em] text-[10px]">
                         {categoryContent[selectedCategory].tagline}
                       </span>
                     </motion.div>
 
                     <motion.h2
-                      initial={{ opacity: 0, y: 20 }}
+                      initial={{ opacity: 0, y: 15 }}
                       animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.45, delay: 0.3 }}
-                      className="text-4xl md:text-5xl lg:text-6xl font-black text-slate-100 mb-8 leading-[1.1]"
+                      transition={{ duration: 0.4, delay: 0.25 }}
+                      className="text-2xl md:text-3xl lg:text-4xl font-black text-slate-100 mb-4 leading-tight"
                     >
                       {categoryContent[selectedCategory].title}
                     </motion.h2>
 
                     <motion.p
-                      initial={{ opacity: 0, y: 20 }}
+                      initial={{ opacity: 0, y: 15 }}
                       animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.45, delay: 0.35 }}
-                      className="text-lg text-slate-400 leading-relaxed text-justify mb-10 font-medium"
+                      transition={{ duration: 0.4, delay: 0.3 }}
+                      className="text-sm text-slate-400 leading-relaxed text-justify mb-6 font-medium"
                     >
                       {categoryContent[selectedCategory].description}
                     </motion.p>
 
                     <motion.div
-                      initial={{ opacity: 0, y: 15 }}
+                      initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.45, delay: 0.4 }}
-                      className="flex flex-wrap gap-4"
+                      transition={{ duration: 0.4, delay: 0.35 }}
+                      className="flex flex-wrap gap-3"
                     >
                       <motion.button
-                        whileHover={{ y: -4, scale: 1.03 }}
-                        whileTap={{ scale: 0.96 }}
+                        whileHover={{ y: -3, scale: 1.02 }}
+                        whileTap={{ scale: 0.97 }}
                         onClick={() => navigate(categoryContent[selectedCategory].route)}
-                        className="px-8 py-4 bg-teal-500 text-slate-950 rounded-xl font-black uppercase tracking-widest text-xs hover:bg-teal-600 transition-all duration-300 shadow-xl shadow-teal-500/20"
+                        className="px-6 py-2.5 bg-teal-500 text-slate-950 rounded-lg font-black uppercase tracking-wider text-[10px] hover:bg-teal-600 transition-all duration-300 shadow-lg shadow-teal-500/10"
                       >
                         View Details
                       </motion.button>
                       <motion.button
-                        whileHover={{ y: -4, scale: 1.03 }}
-                        whileTap={{ scale: 0.96 }}
+                        whileHover={{ y: -3, scale: 1.02 }}
+                        whileTap={{ scale: 0.97 }}
                         onClick={() => setSelectedCategory("All")}
-                        className="px-8 py-4 bg-slate-800 text-slate-100 rounded-xl font-black uppercase tracking-widest text-xs hover:bg-slate-700 transition-all duration-300 border border-slate-700"
+                        className="px-6 py-2.5 bg-slate-800 text-slate-100 rounded-lg font-black uppercase tracking-wider text-[10px] hover:bg-slate-700 transition-all duration-300 border border-slate-700"
                       >
                         Back
                       </motion.button>
