@@ -7,6 +7,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navLinks = [
+<<<<<<< HEAD
     { name: "Home", path: "/" },
     { name: "Events", path: "/events" },
     { name: "Team", path: "/team" },
@@ -15,6 +16,18 @@ const Navbar = () => {
     { name: "Gallery", path: "/gallery" },
     { name: "Contact Us", path: "/contact" },
   ];
+=======
+  { name: "Home", path: "/" },
+  { name: "Events", path: "/events" },
+  { name: "Team", path: "/team" },
+  { name: "Staff", path: "/staff" },
+  { name: "Clubs", path: "/clubs" },
+  { name: "Facilities", path: "/facilities" },
+  { name: "Gallery", path: "/gallery" },
+  { name: "Feedback", path: "/feedback" },
+  { name: "Contact", path: "/contact" },
+];
+>>>>>>> 3b862deb7ebd33e859319ebaf76013a706c9ca27
 
   return (
     <header className="bg-[#020B2D] border-b border-[#1E3A5F] sticky top-0 z-50 px-6 py-4">

@@ -19,6 +19,8 @@ import Fest from "./pages/Fest";
 import Josh from './pages/josh';
 import GC from './pages/gc';
 import Shaurya from './pages/shaurya';
+import Facilities from "./pages/Facilities";
+
 
 function App() {
   return (
@@ -45,6 +47,7 @@ function App() {
               <Route path='/contact' element={<Contact />} />
               <Route path='/feedback' element={<Feedback />} />
               <Route path="/fest" element={<Fest />} />
+              <Route path="/facilities" element={<Facilities />} />
             </Routes>
             <Footer />
           </DisplayProvider>

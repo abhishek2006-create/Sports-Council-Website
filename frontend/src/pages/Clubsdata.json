@@ -11,6 +11,14 @@
       "name": "Harshavardhan Pawar",
       "photo": "/images/Harshavardhan_Pawar_Aquatics.jpg"
     },
+    "previousHeads": [
+      {
+        "name": "Previous Head Name",
+        "year": "2024 - 2025",
+        "description": "Short description about the previous Aquatics Club Head.",
+        "photo": "/images/previous_head.jpg"
+      }
+    ],
     "members": [],
     "gallery": [
       "https://res.cloudinary.com/dats2xfzl/image/upload/q_auto/f_auto/v1781891339/Glimpse_of_swimming_pool_b58vgm.jpg",
@@ -19,6 +27,7 @@
       "https://res.cloudinary.com/dats2xfzl/image/upload/q_auto/f_auto/v1781970722/March_Past_winners_for_inter_IIT_2025_pqjinn.jpg"
     ]
   },
+
   {
     "id": 2,
     "name": "Athletics",
@@ -30,10 +39,14 @@
       "name": "Ayush Raj",
       "photo": "/images/ayush_raj_Athletics .jpeg"
     },
+<<<<<<< HEAD
     "CoHead": {
       "name": "Prachi Singh",
       "photo": "/images/prachi.png"
     },
+=======
+    "previousHeads": [],
+>>>>>>> 3b862deb7ebd33e859319ebaf76013a706c9ca27
     "members": [],
     "gallery": [
       "https://res.cloudinary.com/dats2xfzl/image/upload/q_auto/f_auto/v1781971133/Image2_uyvvw9.jpg",
@@ -45,6 +58,7 @@
       "https://res.cloudinary.com/dats2xfzl/image/upload/q_auto/f_auto/v1781971134/WhatsApp_Image_2026-06-18_at_9.27.18_PM_px3kw4.jpg"
     ]
   },
+
   {
     "id": 3,
     "name": "Badminton",
@@ -56,10 +70,14 @@
       "name": "Parv Khandelwal",
       "photo": "/images/parv.png"
     },
+<<<<<<< HEAD
     "CoHead": {
       "name": "Kajal Yadav",
       "photo": "/images/Kajal.jpeg"
     },
+=======
+    "previousHeads": [],
+>>>>>>> 3b862deb7ebd33e859319ebaf76013a706c9ca27
     "members": [],
     "gallery": [
       "https://res.cloudinary.com/dats2xfzl/image/upload/q_auto/f_auto/v1781971947/INTER_IIT_2024_Team_jkr4hx.jpg",
@@ -69,6 +87,7 @@
       "https://res.cloudinary.com/dats2xfzl/image/upload/q_auto/f_auto/v1781971815/Women_s_Badminton_Tournament_Organized_by_Badminton_Club_Women_Cell_muboep.png"
     ]
   },
+
   {
     "id": 4,
     "name": "Basketball",
@@ -80,6 +99,7 @@
       "name": "Swarit Porwal",
       "photo": "/images/swarit.png"
     },
+    "previousHeads": [],
     "gallery": [
       "https://res.cloudinary.com/dats2xfzl/image/upload/q_auto/f_auto/v1781972272/WhatsApp_Image_2026-06-16_at_10.05.16_jrgtcy.jpg",
       "https://res.cloudinary.com/dats2xfzl/image/upload/q_auto/f_auto/v1781972273/WhatsApp_Image_2026-06-16_at_10.06.37_btyzqx.jpg",
@@ -89,6 +109,7 @@
     ],
     "members": []
   },
+
   {
     "id": 5,
     "name": "Cricket",
@@ -100,12 +121,14 @@
       "name": "Sanyam Babel",
       "photo": "/images/babel.jpeg"
     },
+    "previousHeads": [],
     "gallery": [
       "https://res.cloudinary.com/dats2xfzl/image/upload/q_auto/f_auto/v1781972687/20250216_155856.heic_rljuqh.heic",
       "https://res.cloudinary.com/dats2xfzl/image/upload/q_auto/f_auto/v1781972586/WhatsApp_Image_2026-06-17_at_13.56.34_o4oxys.jpg"
     ],
     "members": []
   },
+
   {
     "id": 6,
     "name": "Chess",
@@ -117,6 +140,7 @@
       "name": "Shriram Naik",
       "photo": "/images/Shriram_Naik_Chess.png"
     },
+    "previousHeads": [],
     "gallery": [
       "https://res.cloudinary.com/dats2xfzl/image/upload/q_auto/f_auto/v1781972849/Zenith_Simul_Event-2024_aei592.jpg",
       "https://res.cloudinary.com/dats2xfzl/image/upload/q_auto/f_auto/v1781972847/Inter_IIT_Selection_Tournament_2024_l8kddc.jpg",
@@ -125,6 +149,7 @@
     ],
     "members": []
   },
+
   {
     "id": 7,
     "name": "Football",
@@ -136,10 +161,14 @@
       "name": "Aniket Baskey",
       "photo": "/images/aniket.jpeg"
     },
+<<<<<<< HEAD
     "CoHead": {
       "name": "Aditya B",
       "photo": "/images/AdityaB_ch.jpg"
     },
+=======
+    "previousHeads": [],
+>>>>>>> 3b862deb7ebd33e859319ebaf76013a706c9ca27
     "members": [],
     "gallery": [
       "https://res.cloudinary.com/dats2xfzl/image/upload/q_auto/f_auto/v1781973293/IMG_8059_ewuckp.jpg",
@@ -153,6 +182,7 @@
       "https://res.cloudinary.com/dats2xfzl/image/upload/q_auto/f_auto/v1781975017/IMG_8044_pn1yia.jpg"
     ]
   },
+
   {
     "id": 8,
     "name": "Hockey",
@@ -164,12 +194,17 @@
       "name": "Bhukya Sethu Madhav Naik",
       "photo": "/images/sethu.png"
     },
+<<<<<<< HEAD
     "CoHead": {
       "name": "Vinay Gound",
       "photo": "/images/VinayG.png"
     },
+=======
+    "previousHeads": [],
+>>>>>>> 3b862deb7ebd33e859319ebaf76013a706c9ca27
     "members": []
   },
+
   {
     "id": 9,
     "name": "Tennis",
@@ -181,12 +216,17 @@
       "name": "Kavin Krishnan S",
       "photo": "/images/Kavin_Krishnan_S_Tennis .jpg"
     },
+<<<<<<< HEAD
     "CoHead": {
       "name": "Ram Upadhyay ",
       "photo": "/images/ram.jpeg"
     },
+=======
+    "previousHeads": [],
+>>>>>>> 3b862deb7ebd33e859319ebaf76013a706c9ca27
     "members": []
   },
+
   {
     "id": 10,
     "name": "Squash",
@@ -198,8 +238,10 @@
       "name": "TBD",
       "photo": ""
     },
+    "previousHeads": [],
     "members": []
   },
+
   {
     "id": 11,
     "name": "Table Tennis",
@@ -211,6 +253,7 @@
       "name": "Aarush Pravin Bindod",
       "photo": "/images/Aarush.jpg"
     },
+    "previousHeads": [],
     "gallery": [
       "https://res.cloudinary.com/dats2xfzl/image/upload/q_auto/f_auto/v1781974422/IMG-20260619-WA0023_swenuw.jpg",
       "https://res.cloudinary.com/dats2xfzl/image/upload/q_auto/f_auto/v1781974423/IMG-20260619-WA0022_k00jii.jpg",
@@ -223,6 +266,7 @@
     ],
     "members": []
   },
+
   {
     "id": 12,
     "name": "Volleyball",
@@ -234,6 +278,7 @@
       "name": "Pramod",
       "photo": "/images/Pramod.jpg"
     },
+    "previousHeads": [],
     "members": [],
     "gallery": [
       "https://res.cloudinary.com/dats2xfzl/image/upload/v1782300141/IMG-20260131-WA0006_pujjrn.jpg",
@@ -244,6 +289,7 @@
       "https://res.cloudinary.com/dats2xfzl/image/upload/v1782300141/LAKSHAY_2026_1_jauiwe.jpg"
     ]
   },
+
   {
     "id": 13,
     "name": "Gym",
@@ -255,6 +301,7 @@
       "name": "Yash Thakare",
       "photo": "/images/yash_thakare.png"
     },
+    "previousHeads": [],
     "gallery": [
       "https://res.cloudinary.com/dats2xfzl/image/upload/q_auto/f_auto/v1781975487/IMG_20260514_172937_rncy1c.jpg",
       "https://res.cloudinary.com/dats2xfzl/image/upload/q_auto/f_auto/v1781975504/IMG_20260514_173223_lktjf9.jpg",
@@ -267,6 +314,7 @@
     ],
     "members": []
   },
+
   {
     "id": 14,
     "name": "Yoga",
@@ -278,8 +326,10 @@
       "name": "Savan Rajeshbhai Gorasia",
       "photo": "/images/SavanRajeshbhaiGorasia.jpeg"
     },
+    "previousHeads": [],
     "members": []
   },
+
   {
     "id": 15,
     "name": "Cycling",
@@ -291,8 +341,10 @@
       "name": "Krushna",
       "photo": "/images/Krushna_cycling.jpeg"
     },
+    "previousHeads": [],
     "members": []
   },
+
   {
     "id": 16,
     "name": "Weight Lifting",
@@ -304,6 +356,7 @@
       "name": "Gaurav Tiwari",
       "photo": "/images/Gaurav.jpg"
     },
+    "previousHeads": [],
     "members": []
   }
 ]
