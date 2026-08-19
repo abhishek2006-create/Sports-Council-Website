@@ -2,9 +2,9 @@ import React, { createContext, useState } from "react";
 import axios from "axios";
 import Cookies from "js-cookie";
 
-const API_URL = import.meta.env.VITE_API_URL;
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
-axios.get(`${API_URL}/backend/api/stats/`);
+axios.get(`${BASE_URL}/backend/api/stats/`);
 
 const DisplayContext = createContext();
 export default DisplayContext;
