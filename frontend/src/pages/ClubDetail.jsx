@@ -133,9 +133,6 @@ export default function ClubDetail() {
                 relative z-10"
             >
 
-                {/* ================================================= */}
-                {/* CLUB LOGO */}
-                {/* ================================================= */}
 
                 {club.image && (
                     <div className="flex justify-center mb-8">

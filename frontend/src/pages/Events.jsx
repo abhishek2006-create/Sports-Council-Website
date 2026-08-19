@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 
 const categoryContent = {
-  "JOSH 5.0": {
+  "JOSH": {
     title: "JOSH",
     img: "https://res.cloudinary.com/dats2xfzl/image/upload/v1783662509/Gemini_Generated_Image_mbu54zmbu54zmbu5_janxqv.png",
     route: "/events/josh",
