@@ -90,7 +90,7 @@ export default function Footer() {
             <span>&</span>
 
             <a
-              href="https://www.instagram.com/2410_abhishek.01?igsh=ZmltenNpdmU2OWsw"
+              href="https://www.instagram.com/im_tanush14/"
               target="_blank"
               rel="noreferrer"
               className="font-medium text-slate-300 hover:text-[#28D7C5] transition-colors"
