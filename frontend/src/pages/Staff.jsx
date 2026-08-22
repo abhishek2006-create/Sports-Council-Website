@@ -13,9 +13,9 @@ export default function Staff() {
             email: "dsoa@iiti.ac.in",
             img: "/images/dosa_sir.jpeg",
             previousHolders: [
-                { name: "Prof. Ram Bilas", year: "2023 - 24", img: "/images/prev/dosa1.jpg", description: "Led student welfare & sports infrastructure expansion." },
-                { name: "Prof. Anand Parey", year: "2022 - 23", img: "/images/prev/dosa2.jpg", description: "Introduced the inter-hostel championship format." },
-                { name: "Prof. Ashutosh Mishra", year: "2021 - 22", img: "/images/prev/dosa3.jpg", description: "Oversaw post-pandemic revival of campus sports." }
+                { name: "Dr. Srivathsan Vasudevan ", year: "2021 - 25", img: "/images/prev/dosa1.jpg", description: "" },
+                { name: "Dr. Santosh Kumar Vishvakarma", year: "2018 - 21", img: "/images/prev/dosa2.jpg", description: "" },
+                { name: "Dr. Abhishek Srivastava", year: "2015 - 18", img: "/images/prev/dosa3.jpg", description: "" }
             ]
         },
         {
@@ -25,33 +25,33 @@ export default function Staff() {
             email: "swamiramabadran@iiti.ac.in",
             img: "/images/swami_sir.png",
             previousHolders: [
-                { name: "Dr. Kiran Bala", year: "2023 - 24", img: "/images/prev/con1.jpg", description: "Streamlined the sports council budget process." },
-                { name: "Dr. Vimal Bhatia", year: "2022 - 23", img: "/images/prev/con2.jpg", description: "Launched the annual sports fest 'Aaghaz'." },
-                { name: "Dr. Neelesh Jain", year: "2021 - 22", img: "/images/prev/con3.jpg", description: "Formalised the club selection guidelines." }
+                { name: "Dr. Kiran Bala", year: "2023 - 24", img: "/images/prev/con1.jpg", description: "" },
+                { name: "Dr. Vimal Bhatia", year: "2022 - 23", img: "/images/prev/con2.jpg", description: "" },
+                { name: "Dr. Neelesh Jain", year: "2021 - 22", img: "/images/prev/con3.jpg", description: "" }
             ]
         },
           {
             key: "Staff04",
             title: "Dr. Bibekananda Maji",
-            Subtitle: "Co-Convenor-2",
+            Subtitle: "Co-Convenor",
             email: "bibekanandamaji@iiti.ac.in",
             img: "/images/maji_sir.jpeg",
             previousHolders: [
-                { name: "Dr. Arti Kashyap", year: "2023 - 24", img: "/images/prev/co4.jpg", description: "Promoted women's participation in campus sports." },
-                { name: "Dr. Sudeshna Chattopadhyay", year: "2022 - 23", img: "/images/prev/co5.jpg", description: "Coordinated the Inter-IIT hosting committee." },
-                { name: "Dr. Amod Kumar", year: "2021 - 22", img: "/images/prev/co6.jpg", description: "Started the fitness awareness drive." }
+                { name: "Dr. Arti Kashyap", year: "2023 - 24", img: "/images/prev/co4.jpg", description: "" },
+                { name: "Dr. Sudeshna Chattopadhyay", year: "2022 - 23", img: "/images/prev/co5.jpg", description: "" },
+                { name: "Dr. Amod Kumar", year: "2021 - 22", img: "/images/prev/co6.jpg", description: "" }
             ]
         },
         {
             key: "Staff03",
             title: "Dr. Gaurav Chauhan",
-            Subtitle: "Co-Convenor",
+            Subtitle: "Co-Convenor-2",
             email: "gaurav@iiti.ac.in",
             img: "/images/gaurav_sir.png",
             previousHolders: [
-                { name: "Dr. Sarika Jain", year: "2023 - 24", img: "/images/prev/co1.jpg", description: "Handled club fund allocation & audits." },
-                { name: "Dr. Manish Sharma", year: "2022 - 23", img: "/images/prev/co2.jpg", description: "Mentored the athletics and aquatics teams." },
-                { name: "Dr. Pankaj Sharma", year: "2021 - 22", img: "/images/prev/co3.jpg", description: "Improved sports gear procurement system." }
+                { name: "Dr. Sarika Jain", year: "2023 - 24", img: "/images/prev/co1.jpg", description: "" },
+                { name: "Dr. Manish Sharma", year: "2022 - 23", img: "/images/prev/co2.jpg", description: "" },
+                { name: "Dr. Pankaj Sharma", year: "2021 - 22", img: "/images/prev/co3.jpg", description: "" }
             ]
         },
       
@@ -62,9 +62,9 @@ export default function Staff() {
             email: "dso@iiti.ac.in",
             img: "/images/pillai_sir.png",
             previousHolders: [
-                { name: "Mr. Rajesh Verma", year: "2023 - 24", img: "/images/prev/dso1.jpg", description: "Managed Inter-IIT contingent training programs." },
-                { name: "Mr. Sanjay Kumar", year: "2022 - 23", img: "/images/prev/dso2.jpg", description: "Set up the strength & conditioning facility." },
-                { name: "Mr. Deepak Yadav", year: "2021 - 22", img: "/images/prev/dso3.jpg", description: "Coordinated coaching staff recruitment." }
+                { name: "Mr. Rajesh Verma", year: "2023 - 24", img: "/images/prev/dso1.jpg", description: "" },
+                { name: "Mr. Sanjay Kumar", year: "2022 - 23", img: "/images/prev/dso2.jpg", description: "" },
+                { name: "Mr. Deepak Yadav", year: "2021 - 22", img: "/images/prev/dso3.jpg", description: "" }
             ]
         }
 
@@ -87,7 +87,7 @@ export default function Staff() {
     const toggleAllLegacy = () => {
         const next = !showAllLegacy;
         setShowAllLegacy(next);
-        setOpenPrevious(null); // reset individual toggles
+        setOpenPrevious(null); 
     };
 
     /* helper: is the legacy section open for this card? */
@@ -147,7 +147,7 @@ export default function Staff() {
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
                                     d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
-                            {showAllLegacy ? "Hide Legacy (Last 3 Years)" : "View Legacy (Last 3 Years)"}
+                            {showAllLegacy ? "Hide Legacy (Previous  Years)" : "View Legacy (Previous Years)"}
                         </button>
                     </div>
                 </motion.div>

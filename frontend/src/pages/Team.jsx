@@ -42,75 +42,76 @@ export default function Team() {
       },
     ],
 
+    "2025-26": [
+      // {
+      //   img: "/images/placeholder.png",
+      //   name: "Previous JS 1",
+      //   role: "Joint Secretary",
+      //   email: "prev1@iiti.ac.in",
+      // },
+      {
+        img: "",
+        name: "Prayag Lakhani",
+        role: "General Secretary Sports",
+        email: "",
+      },
+      // {
+      //   img: "/images/placeholder.png",
+      //   name: "Previous JS 2",
+      //   role: "Joint Secretary",
+      //   email: "prev2@iiti.ac.in",
+      // },
+    ],
+
+    "2024-25": [
+      // {
+      //   img: "/images/placeholder.png",
+      //   name: "Previous JS 1",
+      //   role: "Joint Secretary",
+      //   email: "prev1@iiti.ac.in",
+      // },
+      {
+        img: "",
+        name: "Nikhil Eswaran",
+        role: "General Secretary Sports",
+        email: "",
+      },
+      // {
+      //   img: "/images/placeholder.png",
+      //   name: "Previous JS 2",
+      //   role: "Joint Secretary",
+      //   email: "prev2@iiti.ac.in",
+      // },
+    ],
+
     "2023-24": [
+      // {
+      //   img: "/images/placeholder.png",
+      //   name: "Previous JS 1",
+      //   role: "Joint Secretary",
+      //   email: "prev1@iiti.ac.in",
+      // },
       {
-        img: "/images/placeholder.png",
-        name: "Previous JS 1",
-        role: "Joint Secretary",
-        email: "prev1@iiti.ac.in",
-      },
-      {
-        img: "/images/placeholder.png",
-        name: "Previous GS Sports",
+        img: "",
+        name: "Kartikeya Sharma",
         role: "General Secretary Sports",
-        email: "prev_gs@iiti.ac.in",
+        email: "",
       },
-      {
-        img: "/images/placeholder.png",
-        name: "Previous JS 2",
-        role: "Joint Secretary",
-        email: "prev2@iiti.ac.in",
-      },
+      // {
+      //   img: "/images/placeholder.png",
+      //   name: "Previous JS 2",
+      //   role: "Joint Secretary",
+      //   email: "prev2@iiti.ac.in",
+      // },
     ],
 
-    "2022-23": [
-      {
-        img: "/images/placeholder.png",
-        name: "Previous JS 1",
-        role: "Joint Secretary",
-        email: "prev1@iiti.ac.in",
-      },
-      {
-        img: "/images/placeholder.png",
-        name: "Previous GS Sports",
-        role: "General Secretary Sports",
-        email: "prev_gs@iiti.ac.in",
-      },
-      {
-        img: "/images/placeholder.png",
-        name: "Previous JS 2",
-        role: "Joint Secretary",
-        email: "prev2@iiti.ac.in",
-      },
-    ],
-
-    "2021-22": [
-      {
-        img: "/images/placeholder.png",
-        name: "Previous JS 1",
-        role: "Joint Secretary",
-        email: "prev1@iiti.ac.in",
-      },
-      {
-        img: "/images/placeholder.png",
-        name: "Previous GS Sports",
-        role: "General Secretary Sports",
-        email: "prev_gs@iiti.ac.in",
-      },
-      {
-        img: "/images/placeholder.png",
-        name: "Previous JS 2",
-        role: "Joint Secretary",
-        email: "prev2@iiti.ac.in",
-      },
-    ],
   };
 
   const years = [
     { key: "present", label: "Present" },
+    { key: "2025-26", label: "2025-26" },
+    { key: "2024-25", label: "2024-25" },
     { key: "2023-24", label: "2023-24" },
-    { key: "2022-23", label: "2022-23" },
-    { key: "2021-22", label: "2021-22" },
   ];
 
   const groups = [

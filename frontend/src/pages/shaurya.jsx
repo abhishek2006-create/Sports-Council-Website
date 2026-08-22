@@ -38,7 +38,7 @@ export default function Shaurya() {
             Shaurya
           </h1>
 
-          <p className="max-w-3xl mx-auto mt-6 text-slate-200 text-lg md:text-xl">
+          <p className="max-w-3xl mx-auto mt-6 text-[#b4b1ae] text-lg md:text-xl">
             Shaurya celebrates courage, endurance, teamwork, and the spirit of
             sports through exciting competitions and energetic campus
             participation.This is IIT Indore's Inter-Hostel event.

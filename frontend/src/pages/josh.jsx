@@ -35,7 +35,7 @@ export default function Josh() {
             JOSH
           </h1>
 
-          <p className="max-w-3xl mx-auto mt-6 text-slate-200 text-lg md:text-xl">
+          <p className="max-w-3xl mx-auto mt-6 text-[#b4b1ae] text-lg md:text-xl">
             JOSH is IIT Indore's annual sports festival that celebrates
             determination, sportsmanship, teamwork, and the competitive spirit
             through exciting sporting events for the freshers.

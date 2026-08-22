@@ -85,7 +85,7 @@ export default function Fest() {
               show: { opacity: 1, y: 0 },
             }}
             transition={{ duration: 1 }}
-            className="text-6xl md:text-8xl font-extrabold text-white mt-4 mb-6"
+            className="text-6xl md:text-8xl font-extrabold text-[#e5e6e7] mt-4 mb-6"
           >
             Lakshya
           </motion.h1>

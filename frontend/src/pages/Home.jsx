@@ -300,7 +300,7 @@ export default function Home() {
                   <div className="grid md:grid-cols-3 gap-4">
                     {activeEvent.highlights.map((highlight, idx) => (
                       <div key={idx} className="bg-slate-950/60 p-5 rounded-2xl border border-slate-800/80">
-                        <h5 className="text-white font-bold text-base mb-2">{highlight.title}</h5>
+                        <h5 className="text-teal-400 font-bold text-base mb-2">{highlight.title}</h5>
                         <p className="text-slate-400 text-xs md:text-sm leading-relaxed">{highlight.text}</p>
                       </div>
                     ))}
@@ -351,7 +351,7 @@ export default function Home() {
                   </a>
                   <button
                     onClick={() => setActiveEvent(null)}
-                    className="px-6 py-2.5 bg-slate-800 hover:bg-slate-700 text-white rounded-xl font-bold uppercase tracking-wider text-xs transition-colors"
+                    className="px-6 py-2.5 bg-orange-300 hover:bg-slate-700 text-white rounded-xl font-bold uppercase tracking-wider text-xs transition-colors"
                   >
                     Close Window
                   </button>

@@ -34,7 +34,7 @@ export default function GC() {
             General Championship
           </h1>
 
-          <p className="max-w-3xl mx-auto mt-6 text-slate-200 text-lg md:text-xl">
+          <p className="max-w-3xl mx-auto mt-6 text-[#b4b1ae] text-lg md:text-xl">
             The General Championship is the most prestigious inter-year
             competition at IIT Indore where every point matters and every match
             contributes towards pride of ur team.
