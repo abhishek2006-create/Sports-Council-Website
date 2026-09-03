@@ -12,12 +12,7 @@
       "photo": "/images/Harshavardhan_Pawar_Aquatics.jpg"
     },
     "previousHeads": [
-      {
-        "name": "Previous Head Name",
-        "year": "2024 - 2025",
-        "description": "Short description about the previous Aquatics Club Head.",
-        "photo": "/images/previous_head.jpg"
-      }
+    
     ],
     "members": [],
     "gallery": [
@@ -178,7 +173,7 @@
     "id": 8,
     "name": "Hockey",
     "description": "The Hockey Club is one of the most active sports clubs at IIT Indore, committed to nurturing talent and fostering a competitive spirit among students. Through structured training, practice matches, and participation in inter-college tournaments, the club provides a platform for players to enhance their technical skills, physical fitness, and teamwork. The club welcomes enthusiasts of all skill levels and strives to uphold the values of dedication, discipline, and sportsmanship.",
-    "membership": "TBD",
+    "membership": "",
     "status": "Coming Soon",
     "image": "https://res.cloudinary.com/dats2xfzl/image/upload/v1786794227/WhatsApp_Image_2026-08-15_at_17.12.28_h5a8fm.jpg",
     "head": {
@@ -197,7 +192,7 @@
     "id": 9,
     "name": "Tennis",
     "description": "The objective of our club is to develop the players' stamina, speed, agility and flexibility. The trainings should also help the players develop their racket reaction and coordination. It is also very important to teach the players on the dynamic balance between the body, ball and the racket.",
-    "membership": "Skill development",
+    "membership": "",
     "status": "Active",
     "image": "/images/tennis.png",
     "head": {
@@ -215,12 +210,12 @@
   {
     "id": 10,
     "name": "Squash",
-    "description": "Details will be uploaded soon.",
-    "membership": "TBD",
+    "description": "",
+    "membership": "",
     "status": "Coming Soon",
     "image": "/images/squash.png",
     "head": {
-      "name": "TBD",
+      "name": "Paholpreet Kaur",
       "photo": "/images/kour.jpeg"
     },
     "previousHeads": [],

@@ -10,24 +10,24 @@ export default function Staff() {
             key: "Staff01",
             title: "Prof. Amod C. Umarikar",
             Subtitle: "Dean of Student Affairs",
-            email: "dsoa@iiti.ac.in",
+            email: "dosa@iiti.ac.in",
             img: "/images/dosa_sir.jpeg",
             previousHolders: [
-                { name: "Dr. Srivathsan Vasudevan ", year: "2021 - 25", img: "/images/prev/dosa1.jpg", description: "" },
-                { name: "Dr. Santosh Kumar Vishvakarma", year: "2018 - 21", img: "/images/prev/dosa2.jpg", description: "" },
-                { name: "Dr. Abhishek Srivastava", year: "2015 - 18", img: "/images/prev/dosa3.jpg", description: "" }
+                // { name: "Dr. Srivathsan Vasudevan ", year: "2021 - 25", img: "/images/prev/dosa1.jpg", description: "" },
+                // { name: "Dr. Santosh Kumar Vishvakarma", year: "2018 - 21", img: "/images/prev/dosa2.jpg", description: "" },
+                // { name: "Dr. Abhishek Srivastava", year: "2015 - 18", img: "/images/prev/dosa3.jpg", description: "" }
             ]
         },
         {
             key: "Staff02",
             title: "Dr. Swaminathan Ramabadran",
-            Subtitle: "Convenor",
-            email: "swamiramabadran@iiti.ac.in",
+            Subtitle: "professor In- charge sports",
+            email: "prof-incharge-sports@iiti.ac.in",
             img: "/images/swami_sir.png",
             previousHolders: [
-                { name: "Dr. Kiran Bala", year: "2023 - 24", img: "/images/prev/con1.jpg", description: "" },
-                { name: "Dr. Vimal Bhatia", year: "2022 - 23", img: "/images/prev/con2.jpg", description: "" },
-                { name: "Dr. Neelesh Jain", year: "2021 - 22", img: "/images/prev/con3.jpg", description: "" }
+                // { name: "Dr. Kiran Bala", year: "2023 - 24", img: "/images/prev/con1.jpg", description: "" },
+                // { name: "Dr. Vimal Bhatia", year: "2022 - 23", img: "/images/prev/con2.jpg", description: "" },
+                // { name: "Dr. Neelesh Jain", year: "2021 - 22", img: "/images/prev/con3.jpg", description: "" }
             ]
         },
           {
@@ -37,9 +37,9 @@ export default function Staff() {
             email: "bibekanandamaji@iiti.ac.in",
             img: "/images/maji_sir.jpeg",
             previousHolders: [
-                { name: "Dr. Arti Kashyap", year: "2023 - 24", img: "/images/prev/co4.jpg", description: "" },
-                { name: "Dr. Sudeshna Chattopadhyay", year: "2022 - 23", img: "/images/prev/co5.jpg", description: "" },
-                { name: "Dr. Amod Kumar", year: "2021 - 22", img: "/images/prev/co6.jpg", description: "" }
+                // { name: "Dr. Arti Kashyap", year: "2023 - 24", img: "/images/prev/co4.jpg", description: "" },
+                // { name: "Dr. Sudeshna Chattopadhyay", year: "2022 - 23", img: "/images/prev/co5.jpg", description: "" },
+                // { name: "Dr. Amod Kumar", year: "2021 - 22", img: "/images/prev/co6.jpg", description: "" }
             ]
         },
         {
@@ -49,9 +49,9 @@ export default function Staff() {
             email: "gaurav@iiti.ac.in",
             img: "/images/gaurav_sir.png",
             previousHolders: [
-                { name: "Dr. Sarika Jain", year: "2023 - 24", img: "/images/prev/co1.jpg", description: "" },
-                { name: "Dr. Manish Sharma", year: "2022 - 23", img: "/images/prev/co2.jpg", description: "" },
-                { name: "Dr. Pankaj Sharma", year: "2021 - 22", img: "/images/prev/co3.jpg", description: "" }
+                // { name: "Dr. Sarika Jain", year: "2023 - 24", img: "/images/prev/co1.jpg", description: "" },
+                // { name: "Dr. Manish Sharma", year: "2022 - 23", img: "/images/prev/co2.jpg", description: "" },
+                // { name: "Dr. Pankaj Sharma", year: "2021 - 22", img: "/images/prev/co3.jpg", description: "" }
             ]
         },
       
@@ -62,9 +62,9 @@ export default function Staff() {
             email: "dso@iiti.ac.in",
             img: "/images/pillai_sir.png",
             previousHolders: [
-                { name: "Mr. Rajesh Verma", year: "2023 - 24", img: "/images/prev/dso1.jpg", description: "" },
-                { name: "Mr. Sanjay Kumar", year: "2022 - 23", img: "/images/prev/dso2.jpg", description: "" },
-                { name: "Mr. Deepak Yadav", year: "2021 - 22", img: "/images/prev/dso3.jpg", description: "" }
+                // { name: "Mr. Rajesh Verma", year: "2023 - 24", img: "/images/prev/dso1.jpg", description: "" },
+                // { name: "Mr. Sanjay Kumar", year: "2022 - 23", img: "/images/prev/dso2.jpg", description: "" },
+                // { name: "Mr. Deepak Yadav", year: "2021 - 22", img: "/images/prev/dso3.jpg", description: "" }
             ]
         }
 
@@ -136,7 +136,7 @@ export default function Staff() {
 
                     {/* ---------- GLOBAL LEGACY TOGGLE ---------- */}
                     <div className="mt-8 flex justify-center relative z-10">
-                        <button
+                        {/* <button
                             onClick={toggleAllLegacy}
                             className={`group flex items-center gap-3 px-6 py-3 rounded-full border text-sm font-bold uppercase tracking-widest transition-all duration-300
                                 ${showAllLegacy
@@ -148,7 +148,7 @@ export default function Staff() {
                                     d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
                             {showAllLegacy ? "Hide Legacy (Previous  Years)" : "View Legacy (Previous Years)"}
-                        </button>
+                        </button> */}
                     </div>
                 </motion.div>
 
@@ -247,7 +247,7 @@ export default function Staff() {
                                         >
                                             <div className="pt-4 mt-1 border-t border-slate-800 text-left">
                                                 <h4 className="text-[10px] font-black uppercase tracking-widest text-teal-400 mb-3 text-center">
-                                                    Past 3 Years
+                                                    
                                                 </h4>
 
                                                 <div className="relative space-y-3 pl-4 before:absolute before:left-1 before:top-2 before:bottom-2 before:w-px before:bg-slate-800">

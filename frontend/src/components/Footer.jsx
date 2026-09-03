@@ -59,7 +59,7 @@ export default function Footer() {
               href="mailto:gssports@iiti.ac.in"
               className="text-[#28D7C5] hover:underline"
             >
-              gssports@iiti.ac.in
+              gs.sports@iiti.ac.in
             </a>
 
             <p className="text-slate-400 mt-4">

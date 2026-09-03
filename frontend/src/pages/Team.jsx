@@ -20,7 +20,7 @@ export default function Team() {
         img: "/images/Aryan.jpeg",
         name: "Aryan Poonia",
         role: "Joint Secretary",
-        email: "ce240004008@iiti.ac.in",
+        email: "",
         insta: "https://www.instagram.com/aryanpoonia44",
         linkedin: "https://www.linkedin.com/in/aryan-poonia-0b255a322",
       },
@@ -28,7 +28,7 @@ export default function Team() {
         img: "/images/shukla.png",
         name: "Lakshya Shukla",
         role: "General Secretary Sports",
-        email: "mems240005027@iiti.ac.in",
+        email: "gs.sports@iiti.ac.in",
         insta: "https://www.instagram.com/lakshya.sl",
         linkedin: "https://www.linkedin.com/in/lakshya-shukla-853542345",
       },
@@ -36,7 +36,7 @@ export default function Team() {
         img: "/images/utkarsh.jpg",
         name: "Utkarsh Sharma",
         role: "Joint Secretary",
-        email: "che240008033@iiti.ac.in",
+        email: "",
         insta: "https://instagram.com/utkarsh.0706",
         linkedin: "https://www.linkedin.com/in/utkarsh-s20",
       },
@@ -109,9 +109,9 @@ export default function Team() {
 
   const years = [
     { key: "present", label: "Present" },
-    { key: "2025-26", label: "2025-26" },
-    { key: "2024-25", label: "2024-25" },
-    { key: "2023-24", label: "2023-24" },
+    // { key: "2025-26", label: "2025-26" },
+    // { key: "2024-25", label: "2024-25" },
+    // { key: "2023-24", label: "2023-24" },
   ];
 
   const groups = [

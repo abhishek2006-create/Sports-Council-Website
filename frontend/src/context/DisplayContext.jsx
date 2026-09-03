@@ -2,9 +2,10 @@ import React, { createContext, useState } from "react";
 import axios from "axios";
 import Cookies from "js-cookie";
 
-const BASE_URL = import.meta.env.VITE_BASE_URL;
+const BASE_URL = (import.meta.env.VITE_BASE_URL || '').replace(/\/+$/, '');
+const apiUrl = (path) => `${BASE_URL}/backend/api${path}`;
 
-axios.get(`${BASE_URL}/backend/api/stats/`);
+axios.get(apiUrl('/stats/'));
 
 const DisplayContext = createContext();
 export default DisplayContext;
@@ -41,7 +42,7 @@ export const DisplayProvider = ({ children }) => {
 
 
     let getTeams = () => {
-        axios.get(`${BASE_URL}/teams/`)
+        axios.get(apiUrl('/teams/'))
             .then((response) => {
                 console.log(response.data);
                 setTeam(response.data);
@@ -51,7 +52,7 @@ export const DisplayProvider = ({ children }) => {
     };
 
     let getGallery = () => {
-        axios.get(`${BASE_URL}/gallery/`)
+        axios.get(apiUrl('/gallery/'))
             .then((response) => {
                 console.log(response.data.Gallery, response.data.HallOfFame);
                 setGallery(response.data.Gallery);
@@ -63,7 +64,7 @@ export const DisplayProvider = ({ children }) => {
     };
 
     let getClubs = () => {
-        axios.get(`${BASE_URL}/clubs/`)
+        axios.get(apiUrl('/clubs/'))
             .then((response) => {
                 setClubs(response.data);
                 Cookies.set('clubs', JSON.stringify(response.data));
@@ -72,7 +73,7 @@ export const DisplayProvider = ({ children }) => {
     };
 
     let getClubMembers = (e) => {
-        axios.get(`${BASE_URL}/clubs/${e}/`)
+        axios.get(apiUrl(`/clubs/${e}/`))
             .then((response) => {
                 setClubMembers(response.data.club_members);
                 setClubRules(response.data.rules);
@@ -84,7 +85,7 @@ export const DisplayProvider = ({ children }) => {
     };
 
     let getEvents = () => {
-        axios.get(`${BASE_URL}/events/`)
+        axios.get(apiUrl('/events/'))
             .then((response) => {
                 console.log(response.data);
                 setEvents(response.data);
@@ -94,7 +95,7 @@ export const DisplayProvider = ({ children }) => {
     };
 
     let getUpdates = () => {
-        axios.get(`${BASE_URL}/updates/`)
+        axios.get(apiUrl('/updates/'))
             .then((response) => {
                 console.log(response.data);
                 setUpdates(response.data);
@@ -104,7 +105,7 @@ export const DisplayProvider = ({ children }) => {
     };
 
     let getStats = () => {
-        axios.get(`${BASE_URL}/stats/`)
+        axios.get(apiUrl('/stats/'))
             .then((response) => {
                 console.log(response.data);
                 setStats(response.data);
@@ -114,7 +115,7 @@ export const DisplayProvider = ({ children }) => {
     };
 
     let getMessages = () => {
-        axios.get(`${BASE_URL}/messages/`)
+        axios.get(apiUrl('/messages/'))
             .then((response) => {
                 setMessages(response.data);
             })
@@ -128,16 +129,16 @@ export const DisplayProvider = ({ children }) => {
             Name: formData.get('name'),
             Email: formData.get('email'),
             Phone_Number: formData.get('phone'),
+            Sport: formData.get('sport') || 'General Query',
+            ShortSummary: formData.get('summary') || '',
             Message: `
-Sport/Topic: ${formData.get('sport')}
-Summary: ${formData.get('summary')}
 Details:
-${formData.get('details')}
+${formData.get('details') || ''}
 `
         };
         try {
             const response = await axios.post(
-                `${BASE_URL}/messages/`,
+                apiUrl('/messages/'),
                 data
             );
             console.log(response.data);
